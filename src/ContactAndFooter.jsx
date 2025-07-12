@@ -35,7 +35,6 @@ export function ContactSection() {
     </section>
   );
 }
-
 export function Footer() {
   return (
     <footer className="bg-black text-gray-400 py-6 text-center relative">
