@@ -61,6 +61,19 @@ export default function About() {
               🏸 I love playing badminton. It's a great way for me to stay active and energized.
             </p>
         </div>
+        <div className="relative z-10 max-w-4xl mx-auto mt-20">
+        <h2 className="text-3xl font-semibold mb-8 text-purple-300 text-center">
+          Education
+        </h2>
+        <div className="space-y-6 text-left text-gray-300">
+          <div className="bg-white/5 p-5 rounded-lg border border-purple-800/20 shadow-md">
+            <h3 className="text-xl font-semibold text-white">B.Tech in Computer Science(AI-ML)</h3>
+            <p className="text-sm text-purple-400">Adani University | 2024 – 2028 | Gujarat</p>
+            <p className="mt-2">Currently pursuing Computer Science Engineering with a strong focus on Data Structures, Algorithms, and Full-Stack Development.</p>
+          </div>
+          
+        </div>
+        </div>
         </div>
     </section>
     </>
