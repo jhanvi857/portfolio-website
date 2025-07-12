@@ -38,7 +38,7 @@ export default function SkillsSection() {
     <section className="relative min-h-screen bg-black text-white overflow-hidden px-6 pt-32 pb-16">
         {/* Grid BG */}
         <div className="absolute inset-0 pointer-events-none z-0
-          [background-image:linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)]
+          [background-image:linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)]
           [background-size:40px_40px]" />
           
 

@@ -43,3 +43,15 @@ body {
 .animate-fadeGrid {
   animation: fadeGrid 1.5s ease-out forwards;
 }
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+body {
+  background-color: #000;
+  overflow-x: hidden;
+}

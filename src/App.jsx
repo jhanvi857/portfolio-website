@@ -1,16 +1,26 @@
 import "./App.css";
-import { Router, Route, Link, Routes } from "react-router-dom";
+import { Route, Link, Routes } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 import Home from "./Home";
 import About from "./About";
 import { Footer } from "./ContactAndFooter";
 function App() {
+  useEffect(() => {
+  AOS.init({
+    duration: 800,     // animation duration
+    once: true,        // only animate once
+    easing: 'ease-out',
+  });
+}, []);
   return (
     <>
     <Routes>
       <Route path="/" element={<Home/>}/>
     <Route path="/about" element={<About />} />
     </Routes>
-    <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-black/30 border-b border-white/10 shadow-md">
+    <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-black/30 border-b border-white/10 shadow-md" data-aos="fade-down">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <h1 className="text-2xl font-bold text-white">Jhanvi</h1>
 
@@ -50,7 +60,7 @@ function App() {
             // href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-6 hidden md:inline-block bg-white text-black px-4 py-2 rounded-md hover:-translate-y-1 transition duration-300 font-semibold shadow-md"
+            className="ml-6 hidden cursor-pointer md:inline-block bg-white text-black px-4 py-2 rounded-md hover:-translate-y-1 transition duration-300 font-semibold shadow-md"
           >
             Resume
           </a>

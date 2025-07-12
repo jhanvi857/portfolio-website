@@ -12,7 +12,7 @@ function Home() {
         {/* Grid BG */}
         <div
           className="absolute inset-0 pointer-events-none z-0
-          [background-image:linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)]
+          [background-image:linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)]
           [background-size:40px_40px]"
         />
 
@@ -29,7 +29,11 @@ function Home() {
         {/* Hero Content */}
         <div className="relative z-10 text-center max-w-4xl">
           <div className="relative inline-block" id="about">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight">
+            <h1
+              data-aos="fade-up"
+              data-aos-delay="200"
+              className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight"
+            >
               Hey there! I’m{" "}
               <span className="text-purple-400">Jhanvi Patel</span>
             </h1>
@@ -46,6 +50,8 @@ function Home() {
           </p>
 
           <Link
+            data-aos="zoom-in"
+            data-aos-delay="600"
             to="/about"
             className="inline-block mt-10 px-6 py-3 bg-purple-600 hover:bg-purple-700 transition rounded-md text-white font-medium shadow-md"
           >
@@ -53,16 +59,19 @@ function Home() {
           </Link>
         </div>
       </section>
-      <section id="skills">
+      <section id="skills" className="min-h-screen bg-black" data-aos="fade-up">
         <SkillsSection />
       </section>
-      <section id="projects">
+
+      <section id="projects" className="min-h-screen bg-black" data-aos="fade-up">
         <ProjectsSection />
       </section>
-      <section id="achivements">
+
+      <section id="achievements" className="min-h-screen bg-black" data-aos="fade-up">
         <DSAStats />
       </section>
-      <section id="contact">
+
+      <section id="contact" className="min-h-screen bg-black" data-aos="fade-up">
         <ContactSection />
       </section>
     </>
