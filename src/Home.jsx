@@ -3,9 +3,10 @@ import { Router, Route, Link, Routes } from "react-router-dom";
 import SkillsSection from "./SkillSection";
 import ProjectsSection from "./ProjectsSection";
 import DSAStats from "./DSAStats";
-import { ContactSection, Footer } from "./ContactAndFooter";
-import About from "./About";
+import { ContactSection } from "./ContactAndFooter";
+import About,{useScrollToHash} from "./About";
 function Home() {
+  useScrollToHash();
   return (
     <>
       <section className="relative min-h-screen bg-black text-white flex items-center justify-center overflow-hidden px-6 pt-32 pb-16">

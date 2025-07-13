@@ -33,7 +33,7 @@ const projects = [
 const ProjectCard = ({ project }) => {
   return (
     <div className="rounded-xl p-6 shadow-md hover:shadow-purple-500/20 border border-white/10 transition-all duration-300 bg-gradient-to-br from-black to-purple-950 hover:scale-[1.02]">
-      <h3 className="text-2xl font-semibold text-white mb-4 mt-2">
+    <h3 className="text-xl sm:text-2xl font-semibold text-white mb-4 mt-2">
         {project.title}
       </h3>
 
@@ -41,11 +41,11 @@ const ProjectCard = ({ project }) => {
         <img
           src={project.image}
           alt={project.title}
-          className="h-[450px] w-full object-cover rounded-lg transform hover:scale-105 transition-transform duration-500"
+          className="w-full max-h-[300px] sm:max-h-[400px] md:max-h-[450px] object-cover rounded-lg transform hover:scale-105 transition-transform duration-500"
         />
       </div>
 
-      <p className="text-md text-gray-300 mb-4 text-justify">
+      <p className="text-sm sm:text-base text-gray-300 mb-4 text-justify">
         {project.description}
       </p>
 
@@ -95,7 +95,7 @@ export default function ProjectsSection() {
         <h2 className="text-3xl font-bold mb-10 text-center text-white">
           My Projects
         </h2>
-        <div className="flex flex-col items-center justify-center gap-y-12 max-w-7xl px-28">
+        <div className="flex flex-col items-center justify-center gap-y-12 max-w-7xl px-4 sm:px-6 md:px-10 lg:px-28">
           {projects.map((project) => (
             <ProjectCard key={project.title} project={project} />
           ))}
