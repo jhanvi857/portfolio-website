@@ -93,14 +93,14 @@ function App() {
                 {item}
               </Link>
             ) : (
-              <a
-                href={`#${item.toLowerCase()}`}
+              <Link
+                to={`/#${item.toLowerCase()}`}
                 key={item}
                 className="block text-lg font-medium hover:text-purple-400 transition"
                 onClick={() => setIsOpen(false)}
               >
                 {item}
-              </a>
+              </Link>
             )
           )}
           <a
