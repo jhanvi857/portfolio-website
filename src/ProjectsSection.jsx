@@ -26,7 +26,7 @@ const projects = [
     title: "ChatVerse-AI chatbot",
     description: "Chatverse is an AI chatbot platform built to deliver accurate, context-aware responses. Whether you need assistance, casual conversation, or information, Chatverse is your go-to virtual assistant. The system leverages advanced AI models and offers an intuitive frontend for easy interaction.",
     tags: ["HTML5", "TailwindCSS", "Node.js","MongoDB","Express.js"],
-    demoLink: "https://your-portfolio.vercel.app",
+    demoLink: "",
     codeLink: "https://github.com/jhanvi857/chatVerse-bot"
   },
   {
@@ -70,25 +70,29 @@ const ProjectCard = ({ project }) => {
       </div>
 
       <div className="flex gap-4 text-sm mt-4">
-        <a
-          href={project.demoLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white px-4 py-2 border border-purple-500/50 bg-white/5 backdrop-blur-md hover:bg-purple-700/60 hover:text-white rounded-md transition flex items-center gap-2"
-        >
-          <FaExternalLinkAlt />
-          Live Demo
-        </a>
-        <a
-          href={project.codeLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white px-4 py-2 border border-purple-500/50 bg-white/5 backdrop-blur-md hover:bg-purple-700/60 hover:text-white rounded-md transition flex items-center gap-2"
-        >
-          <FaGithub />
-          GitHub
-        </a>
-      </div>
+  {project.demoLink && (
+    <a
+      href={project.demoLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-white px-4 py-2 border border-purple-500/50 bg-white/5 backdrop-blur-md hover:bg-purple-700/60 hover:text-white rounded-md transition flex items-center gap-2"
+    >
+      <FaExternalLinkAlt />
+      Live Demo
+    </a>
+  )}
+
+  <a
+    href={project.codeLink}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-white px-4 py-2 border border-purple-500/50 bg-white/5 backdrop-blur-md hover:bg-purple-700/60 hover:text-white rounded-md transition flex items-center gap-2"
+  >
+    <FaGithub />
+    GitHub
+  </a>
+</div>
+
     </div>
   );
 };
