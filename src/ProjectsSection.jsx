@@ -3,6 +3,7 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import DSAVisualizer from "./DSAVisualizer.png";
 import RouteOptimizer from "./RouteOpt.png";
 import ChatVerse from "./ChatVerse.png";
+import TextCruncher from "./TextCruncher.png";
 const projects = [
   {
     image:DSAVisualizer,
@@ -27,6 +28,14 @@ const projects = [
     tags: ["HTML5", "TailwindCSS", "Node.js","MongoDB","Express.js"],
     demoLink: "https://your-portfolio.vercel.app",
     codeLink: "https://github.com/jhanvi857/chatVerse-bot"
+  },
+  {
+    image:TextCruncher,
+    title:"TextCruncher",
+    description:"TextCruncher is a fast, privacy-friendly text summarization tool that runs entirely offline. It uses extractive techniques like TextRank and frequency analysis to summarize plain text or PDFs — no internet or AI APIs required.",
+    tags: ["React","TailwindCSS","Node.js","node-summarizer","pdf-parser"],
+    demoLink:"https://text-cruncher.vercel.app/",
+    codeLink:"https://github.com/jhanvi857/TextCruncher-"
   }
 ];
 

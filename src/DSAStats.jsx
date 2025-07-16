@@ -19,7 +19,7 @@ export default function DSAStats() {
                DSA Problem Solving
             </h3>
             <ul className="list-disc list-inside text-gray-300 space-y-2">
-              <li>Solved <span className="text-white font-semibold">200+</span> problems on LeetCode with <span className="text-white font-semibold">56%</span> accuracy.</li>
+              <li>Solved <span className="text-white font-semibold">~200</span> problems on LeetCode with <span className="text-white font-semibold">56%</span> accuracy.</li>
               <li>1000+ hackos on HackerRank</li>
               <li>Strong grip on Graphs, Trees, DP & Greedy</li>
               <li>Built 2 major projects focused on DSA</li>
