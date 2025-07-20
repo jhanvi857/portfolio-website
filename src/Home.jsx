@@ -23,17 +23,17 @@ function Home() {
           rounded-full bg-gradient-to-br from-purple-700 to-violet-500 
           opacity-25 blur-3xl z-0 pointer-events-none"
         />
-
+        <div className="absolute -top-0 -left-40 w-[300px] h-[300px] bg-purple-700 opacity-20 blur-3xl rounded-full z-0"></div>
+        <div className="absolute -top-0 -left-40 w-[300px] h-[300px] bg-purple-700 opacity-20 blur-3xl rounded-full z-0"></div>
         {/* Animated line behind (optional) */}
         <div className="absolute top-1/2 left-0 w-full h-[2px] bg-purple-500 opacity-10 animate-backgroundTealLine blur-md z-0" />
 
-        {/* Hero Content */}
         <div className="relative z-10 text-center max-w-4xl">
           <div className="relative inline-block" id="about">
             <h1
               data-aos="fade-up"
               data-aos-delay="200"
-              className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight"
+              className="text-4xl sm:text-5xl md:text-6xl font-bold"
             >
               Hey there! I’m{" "}
               <span className="text-purple-400">Jhanvi Patel</span>

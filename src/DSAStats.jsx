@@ -19,9 +19,8 @@ export default function DSAStats() {
                DSA Problem Solving
             </h3>
             <ul className="list-disc list-inside text-gray-300 space-y-2">
-              <li>Solved <span className="text-white font-semibold">~200</span> problems on LeetCode with <span className="text-white font-semibold">56%</span> accuracy.</li>
+              <li>Solved <span className="text-white font-semibold">200+</span> problems on LeetCode.</li>
               <li>1000+ hackos on HackerRank</li>
-              <li>Strong grip on Graphs, Trees, DP & Greedy</li>
               <li>Built 2 major projects focused on DSA</li>
             </ul>
           </div>
@@ -32,9 +31,9 @@ export default function DSAStats() {
                Achievements & Highlights
             </h3>
             <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li>Scored 91% in 10th board</li>
-                <li>Scored 92.66% in PCM in 12th boards</li>
-                <li>Contributed to open source projects on GitHub</li>
+                <li>91% in 10th board</li>
+                <li>92.66% in PCM in 12th boards</li>
+                {/* <li>Contributed to open source projects on GitHub</li> */}
                 <li>5-Star in java and bronze problem solving badge on HackerRank</li>
             </ul>
           </div>

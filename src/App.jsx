@@ -8,6 +8,7 @@ import { FaBars,FaTimes } from "react-icons/fa";
 import Home from "./Home";
 import About from "./About";
 import { Footer } from "./ContactAndFooter";
+import CustomCursor from "./CustomCursor";
 function App() {
   useEffect(() => {
   AOS.init({
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <>
+        <CustomCursor/>
     <Routes>
       <Route path="/" element={<Home/>}/>
     <Route path="/about" element={<About />} />
@@ -36,7 +38,7 @@ function App() {
               Home
             </Link>
             <Link
-              to="/#about"
+              to="/about"
               className="relative px-2 py-1 hover:text-white after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-purple-500 hover:after:w-full after:transition-all after:duration-300"
             >
               About
@@ -64,7 +66,7 @@ function App() {
             href="https://docs.google.com/document/d/e/2PACX-1vS4swmzdcXeSdUXUmOqURPi3R6W5wBDg5RJwhRcHLG0KJW-CT1F0ymdIWAvmTvVwt4qWEpGg_25TpFH/pub"
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-6 hidden cursor-pointer md:inline-block bg-white text-black px-4 py-2 rounded-md hover:-translate-y-1 transition duration-300 font-semibold shadow-md"
+            className="ml-6 hidden cursor-pointer md:inline-block border border-white text-white hover:text-purple-500 px-4 py-2 rounded-md hover:-translate-y-1 transition duration-300 font-semibold shadow-md"
           >
             Resume
           </a>

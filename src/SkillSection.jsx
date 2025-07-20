@@ -18,7 +18,8 @@ const skills = [
 
 const SkillBar = ({ name, level }) => {
   return (
-    <div className="mb-5">
+    <div className="mb-5" data-aos="fade-up"
+              data-aos-delay="200">
       <div className="flex justify-between text-sm font-medium text-white mb-1">
         <span className="text-lg">{name}</span>
         <span>{level}/5</span>
