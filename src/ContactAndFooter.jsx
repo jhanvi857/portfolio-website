@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope, FaArrowUp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export function ContactSection() {
   return (
@@ -42,11 +43,11 @@ export function Footer() {
         &copy; {new Date().getFullYear()} Jhanvi Patel. All rights reserved.
       </div>
       <div className="flex justify-center gap-6 text-lg mb-2">
-        <a href="#home" className="hover:text-white">Home</a>
-        <a href="#about" className="hover:text-white">About</a>
-        <a href="#projects" className="hover:text-white">Projects</a>
-        <a href="#skills" className="hover:text-white">Skills</a>
-        <a href="#contact" className="hover:text-white">Contact</a>
+        <Link to="/" className="hover:text-white">Home</Link>
+        <Link to="/about" className="hover:text-white">About</Link>
+        <Link to="/#projects" className="hover:text-white">Projects</Link>
+        <Link to="/#skills" className="hover:text-white">Skills</Link>
+        <Link to="/#contact" className="hover:text-white">Contact</Link>
       </div>
       <a href="#" title="Scroll to top" className="absolute right-4 bottom-4 text-purple-500 hover:text-white">
         <FaArrowUp size={20} />

@@ -41,7 +41,7 @@ const projects = [
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="rounded-xl p-6 shadow-md hover:shadow-purple-500/20 border border-white/10 transition-all duration-300 bg-gradient-to-br from-black to-purple-950 hover:scale-[1.02]" data-aos="fade-up">
+    <div className="rounded-xl p-6 shadow-md hover:shadow-purple-500/20 border border-white/10 ease-in bg-gradient-to-br from-black to-purple-950" data-aos="fade-up">
     <h3 className="text-xl sm:text-2xl font-semibold text-white mb-4 mt-2">
         {project.title}
       </h3>
