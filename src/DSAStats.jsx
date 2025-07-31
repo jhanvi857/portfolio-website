@@ -34,7 +34,7 @@ export default function DSAStats() {
                 <li>91% in 10th board</li>
                 <li>92.66% in PCM in 12th boards</li>
                 {/* <li>Contributed to open source projects on GitHub</li> */}
-                <li>5-Star in java and bronze problem solving badge on HackerRank</li>
+                <li>5-Star in java and silver problem solving badge on HackerRank</li>
             </ul>
           </div>
           
