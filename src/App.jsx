@@ -18,10 +18,10 @@ function App() {
   });
 }, []);
   const [isOpen, setIsOpen] = useState(false);
-
+  
   return (
     <>
-        <CustomCursor/>
+    <CustomCursor/>
     <Routes>
       <Route path="/" element={<Home/>}/>
     <Route path="/about" element={<About />} />
@@ -106,7 +106,7 @@ function App() {
             )
           )}
           <a
-            href="JhaniPatelResume.pdf"
+            href="/JhaniPatelResume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-white text-black px-4 py-2 rounded-md font-semibold shadow-md"

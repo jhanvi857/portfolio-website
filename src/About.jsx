@@ -22,9 +22,7 @@ export default function About() {
   return (
     <>
     <section className=" bg-black text-white flex items-center justify-center overflow-hidden px-12 pt-4 pb-16" data-aos="fade-right"
-              data-aos-delay="200">
-      
-    <div className="relative min-h-screen flex flex-col justify-center items-center bg-black text-white">
+      data-aos-delay="200">
       <div
           className="absolute inset-0 pointer-events-none z-0
           [background-image:linear-gradient(to_right,rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)]
@@ -34,6 +32,8 @@ export default function About() {
       <div className="absolute -top-10 -left-40 w-[300px] h-[300px] bg-purple-700 opacity-20 blur-3xl rounded-full z-0"></div>
       <div className="absolute -bottom-20  w-[300px] h-[300px] bg-purple-500 opacity-20 blur-3xl rounded-full z-0"></div>
 
+    <div className="relative min-h-screen flex flex-col justify-center items-center text-white">
+      
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto text-center mt-24">
         <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-white">
