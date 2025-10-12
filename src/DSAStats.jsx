@@ -64,9 +64,9 @@ const positions = [
 ];
 
 const cpProfiles = [
-  { name: "LeetCode", url: "https://leetcode.com/yourprofile", logo: "https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" },
-  { name: "HackerRank", url: "https://www.hackerrank.com/yourprofile", logo: "https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png" },
-  { name: "Codeforces", url: "https://codeforces.com/profile/yourprofile", logo: "https://cdn.iconscout.com/icon/free/png-256/free-code-forces-logo-icon-svg-download-png-2944796.png" },
+  { name: "LeetCode", url: "https://leetcode.com/u/jhanvi857/", logo: "https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" },
+  { name: "HackerRank", url: "https://www.hackerrank.com/profile/jhanvip8507", logo: "https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png" },
+  { name: "Codeforces", url: "https://codeforces.com/profile/jhanvi.857", logo: "https://cdn.iconscout.com/icon/free/png-256/free-code-forces-logo-icon-svg-download-png-2944796.png" },
 ];
 
 // const Card = ({ title, items, delay }) => (
@@ -90,7 +90,7 @@ const Card = ({ title, items, delay }) => (
   <div
     className="w-full bg-gradient-to-r from-black to-purple-950 border border-purple-600
       rounded-2xl p-4 sm:p-6 mb-6
-      transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 ease-in-out shadow-lg"
+      transform hover:-translate-y-1 hover:from-purple-950 hover:to-black shadow-lg"
     data-aos="fade-up"
     data-aos-delay={delay}
   >
