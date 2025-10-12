@@ -41,7 +41,7 @@ const projects = [
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="rounded-xl p-6 shadow-md hover:shadow-purple-500/20 border border-white/10 ease-in bg-gradient-to-br from-black to-purple-950" data-aos="fade-up">
+    <div className="rounded-xl p-6 shadow-md hover:shadow-purple-500/20  hover:shadow-2xl border border-white/10 ease-in bg-gradient-to-br from-black to-purple-950 hover:from-purple-950 hover:to-black" data-aos="fade-up">
     <h3 className="text-xl sm:text-2xl font-semibold text-white mb-4 mt-2">
         {project.title}
       </h3>
@@ -75,7 +75,7 @@ const ProjectCard = ({ project }) => {
       href={project.demoLink}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-white px-4 py-2 border border-purple-500/50 bg-white/5 backdrop-blur-md hover:bg-purple-700/60 hover:text-white rounded-md transition flex items-center gap-2"
+      className="text-white px-4 py-2 border border-purple-500/50 backdrop-blur-md hover:bg-purple-700/60 transform hover:scale-105 transition-all duration-400 ease-in-out hover:text-white rounded-md flex items-center gap-2"
     >
       <FaExternalLinkAlt />
       Live Demo
@@ -86,7 +86,7 @@ const ProjectCard = ({ project }) => {
     href={project.codeLink}
     target="_blank"
     rel="noopener noreferrer"
-    className="text-white px-4 py-2 border border-purple-500/50 bg-white/5 backdrop-blur-md hover:bg-purple-700/60 hover:text-white rounded-md transition flex items-center gap-2"
+    className="text-white px-4 py-2 border border-purple-500/50 transform hover:scale-105 transition-all duration-400 ease-in-out backdrop-blur-md hover:bg-purple-700/60 hover:text-white rounded-md flex items-center gap-2"
   >
     <FaGithub />
     GitHub
@@ -108,7 +108,7 @@ export default function ProjectsSection() {
         <h2 className="text-3xl font-bold mb-10 text-center text-white">
           My Projects
         </h2>
-        <div className="flex flex-col items-center justify-center gap-y-12 max-w-7xl px-4 sm:px-6 md:px-10 lg:px-28" >
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-10 " >
           {projects.map((project) => (
             <ProjectCard key={project.title} project={project} />
           ))}

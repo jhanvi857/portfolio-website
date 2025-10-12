@@ -63,14 +63,14 @@ function Home() {
       <section id="skills" className="min-h-screen bg-black" data-aos="fade-up">
         <SkillsSection />
       </section>
-
+      <section id="achievements" className="min-h-screen bg-black" data-aos="fade-up">
+        <DSAStats />
+      </section>
       <section id="projects" className="min-h-screen bg-black" data-aos="fade-up">
         <ProjectsSection />
       </section>
 
-      <section id="achievements" className="min-h-screen bg-black" data-aos="fade-up">
-        <DSAStats />
-      </section>
+      
 
       <section id="contact" className="min-h-screen bg-black" data-aos="fade-up">
         <ContactSection />

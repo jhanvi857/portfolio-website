@@ -4,6 +4,8 @@ body {
   /* background-color: #121212; */
   color: white;
   cursor: none;
+  margin: 0;
+  padding: 0;
   font-family: 'Rubik', sans-serif;
 }
 h1, h2, h3, h4 {
@@ -60,4 +62,30 @@ h1, h2, h3, h4 {
 body {
   background-color: #000;
   overflow-x: hidden;
+}
+/* Animated gradient background */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Floating blob animations */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-20px) translateX(10px); }
+}
+@keyframes floatDelayed {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(15px) translateX(-10px); }
+}
+
+.animate-gradient-slow {
+  animation: gradientMove 15s ease infinite;
+}
+.animate-float-slow {
+  animation: floatSlow 10s ease-in-out infinite;
+}
+.animate-float-delayed {
+  animation: floatDelayed 12s ease-in-out infinite;
 }

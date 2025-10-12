@@ -44,17 +44,24 @@ function App() {
               About
             </Link>
             <Link
-              to="/#projects"
-              className="relative px-2 py-1 hover:text-white after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-purple-500 hover:after:w-full after:transition-all after:duration-300"
-            >
-              Projects
-            </Link>
-            <Link
               to="/#skills"
               className="relative px-2 py-1 hover:text-white after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-purple-500 hover:after:w-full after:transition-all after:duration-300"
             >
               Skills
             </Link>
+            <Link
+              to="/#achievements"
+              className="relative px-2 py-1 hover:text-white after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-purple-500 hover:after:w-full after:transition-all after:duration-300"
+            >
+              Achivements & positions
+            </Link>
+            <Link
+              to="/#projects"
+              className="relative px-2 py-1 hover:text-white after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-purple-500 hover:after:w-full after:transition-all after:duration-300"
+            >
+              Projects
+            </Link>
+            
             <Link
               to="/#contact"
               className="relative px-2 py-1 hover:text-white after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-purple-500 hover:after:w-full after:transition-all after:duration-300"
