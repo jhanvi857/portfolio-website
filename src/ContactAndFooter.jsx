@@ -8,9 +8,9 @@ export function ContactSection() {
       <div className="absolute -top-10 -left-40 w-[300px] h-[300px] bg-purple-700 opacity-20 blur-3xl rounded-full z-0"></div>
       <div className="absolute -top-10 -right-0 w-[300px] h-[300px] bg-purple-700 opacity-20 blur-3xl rounded-full z-0"></div>
 
-        <div className="absolute inset-0 pointer-events-none z-0
+        {/* <div className="absolute inset-0 pointer-events-none z-0
           [background-image:linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)]
-          [background-size:40px_40px]" />
+          [background-size:40px_40px]" /> */}
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-purple-400 mb-6">Let's Connect</h2>
         <p className="text-gray-300 mb-8">

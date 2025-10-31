@@ -21,16 +21,16 @@ export default function About() {
   
   return (
     <>
-    <section className=" bg-black text-white flex items-center justify-center overflow-hidden px-12 pt-4 pb-16" data-aos="fade-right"
+    <div className="snow"></div>
+    <section className=" bg-black text-white flex items-center justify-center overflow-hidden px-12 pt-4 pb-16" data-aos="fade-up"
       data-aos-delay="200">
-      <div
+      {/* <div
           className="absolute inset-0 pointer-events-none z-0
           [background-image:linear-gradient(to_right,rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)]
           [background-size:40px_40px]"
         />
-      {/* Background Bubbles */}
       <div className="absolute -top-10 -left-40 w-[300px] h-[300px] bg-purple-700 opacity-20 blur-3xl rounded-full z-0"></div>
-      <div className="absolute -bottom-20  w-[300px] h-[300px] bg-purple-500 opacity-20 blur-3xl rounded-full z-0"></div>
+      <div className="absolute -bottom-20  w-[300px] h-[300px] bg-purple-500 opacity-20 blur-3xl rounded-full z-0"></div> */}
 
     <div className="relative min-h-screen flex flex-col justify-center items-center text-white">
       
@@ -49,14 +49,14 @@ export default function About() {
           I enjoy breaking down complex logic into clear, efficient solutions.I also love to build <span className="text-white font-medium">interactive web applications</span>, 
         </p>
       </div>
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 text-white mt-10 text-center px-4">
+        {/* <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 text-white mt-10 text-center px-4">
   My hobbies and interests beyond coding
-</h1>
+</h1> */}
 
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 md:px-12 lg:px-48" data-aos="fade-up"
-              data-aos-delay="200">
+{/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 md:px-12 lg:px-48" data-aos="fade-up"
+              data-aos-delay="200"> */}
   {/* Hobby 1 */}
-  <div className="bg-purple-800/20 p-5 rounded-lg text-center text-white hover:scale-105 transition transform delay-200 ease-in">
+  {/* <div className="bg-purple-800/20 p-5 rounded-lg text-center text-white hover:scale-105 transition transform delay-200 ease-in">
     <span className="text-3xl">📷</span>
     <p className="mt-2 font-semibold text-lg">Nature Photography</p>
     <p className="mt-2 text-sm text-gray-200">
@@ -64,7 +64,6 @@ export default function About() {
     </p>
   </div>
 
-  {/* Hobby 2 */}
   <div className="bg-purple-800/20 p-5 rounded-lg text-center text-white hover:scale-105 transition transform delay-200 ease-in">
     <span className="text-3xl">🎶</span>
     <p className="mt-2 font-semibold text-lg">Singing</p>
@@ -73,7 +72,6 @@ export default function About() {
     </p>
   </div>
 
-  {/* Hobby 3 */}
   <div className="bg-purple-800/20 p-5 rounded-lg text-center text-white hover:scale-105 transition transform delay-200 ease-in">
     <span className="text-3xl">🏸</span>
     <p className="mt-2 font-semibold text-lg">Badminton</p>
@@ -81,7 +79,7 @@ export default function About() {
       🏸 I love playing badminton. It's a great way for me to stay active and energized.
     </p>
   </div>
-</div>
+</div> */}
 
 {/* Education Section */}
 <div className="relative z-10 max-w-4xl mx-auto mt-20 px-4" data-aos="fade-up"

@@ -28,7 +28,7 @@ function App() {
     </Routes>
     <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-black/30 border-b border-white/10 shadow-md" data-aos="fade-down">
         <div className="hidden sm:max-w-7xl mx-auto px-6 py-4 sm:flex items-center justify-between">
-          <h1 className="hidden sm:inline text-2xl font-bold text-white">Jhanvi</h1>
+          <Link to="/" className="hidden sm:inline text-2xl font-bold text-white">Jhanvi</Link>
 
           <div className="hidden md:flex space-x-6 text-gray-300 font-medium">
             <Link

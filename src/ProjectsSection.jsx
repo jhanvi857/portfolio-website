@@ -101,9 +101,9 @@ const ProjectCard = ({ project }) => {
 export default function ProjectsSection() {
   return (
     <section id="projects" className="relative min-h-screen py-20 px-6 bg-black text-white">
-      <div className="absolute inset-0 pointer-events-none z-0
+      {/* <div className="absolute inset-0 pointer-events-none z-0
           [background-image:linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)]
-          [background-size:40px_40px]" />
+          [background-size:40px_40px]" /> */}
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold mb-10 text-center text-white">
           My Projects

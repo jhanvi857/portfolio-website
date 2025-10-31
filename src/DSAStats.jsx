@@ -1,165 +1,156 @@
-// import React from "react";
-// // import { FaCode, FaMedal, FaGithub, FaTrophy } from "react-icons/fa";
-
-// export default function DSAStats() {
-//   return (
-//     <section id="stats" className="bg-black relative min-h-screen py-20 px-6 text-white">
-//         <div className="absolute inset-0 pointer-events-none z-0
-//           [background-image:linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)]
-//           [background-size:40px_40px]" />
-//       <div className="max-w-6xl mx-auto">
-//         <h2 className="text-3xl font-bold text-center text-white mb-10">
-//           Problem Solving & Achievements
-//         </h2>
-
-//         {/* Problem Solving Stats */}
-//         <div className="grid md:grid-cols-2 gap-8">
-//           <div className="bg-[#1a1a1a] border border-white/10 rounded-xl p-6">
-//             <h3 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-//                DSA Problem Solving
-//             </h3>
-//             <ul className="list-disc list-inside text-gray-300 space-y-2">
-//               <li>Solved <span className="text-white font-semibold">200+</span> problems on LeetCode.</li>
-//               <li>1000+ hackos on HackerRank</li>
-//               <li>Built 2 major projects focused on DSA</li>
-//             </ul>
-//           </div>
-
-//           {/* Achievements */}
-//           <div className="bg-[#1a1a1a] border border-white/10 rounded-xl p-6">
-//             <h3 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-//                Achievements & Highlights
-//             </h3>
-//             <ul className="list-disc list-inside text-gray-300 space-y-2">
-//                 <li>91% in 10th board</li>
-//                 <li>92.66% in PCM in 12th boards</li>
-//                 {/* <li>Contributed to open source projects on GitHub</li> */}
-//                 <li>5-Star in java and silver problem solving badge on HackerRank</li>
-//             </ul>
-//           </div>
-          
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const dsaAchievements = [
-  "Solved 300+ DSA problems on LeetCode (top 14%)",
-  "1200+ Hackos on HackerRank | Java 5-Star | Problem Solving badges",
-  "Built 2 major projects focused on DSA",
+  "Solved 350+ DSA problems on LeetCode (top 6.93%)",
+  "1200+ Hackos on HackerRank | Java 5-Star | Problem Solving silver badge",
 ];
 
-const academics = [
-  "90% in 10th board",
-  "92% in PCM 12th board",
-];
+// const academics = ["91% in 10th board", "92.66% in PCM 12th board"];
 
 const positions = [
-  "DSA & CP Team Member at Adani Student Programming & development Club(ASPDC)",
-  "Trainer at Adani university robotics Club(AURC)",
+  "DSA & CP Team Member at Adani student Programming and development club",
+  "Trainer at Adani university robotics club",
 ];
 
-const cpProfiles = [
-  { name: "LeetCode", url: "https://leetcode.com/u/jhanvi857/", logo: "https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" },
-  { name: "HackerRank", url: "https://www.hackerrank.com/profile/jhanvip8507", logo: "https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png" },
-  { name: "Codeforces", url: "https://codeforces.com/profile/jhanvi.857", logo: "https://cdn.iconscout.com/icon/free/png-256/free-code-forces-logo-icon-svg-download-png-2944796.png" },
-];
-
-// const Card = ({ title, items, delay }) => (
-//   <div
-//     className="bg-gradient-to-r from-black to-purple-950 border border-purple-600 rounded-2xl p-6 mb-8  hover:from-purple-950 hover:to-black
-// transition-all duration-300 ease-in-out
-//  shadow-lg"
-//     data-aos="fade-up"
-//     data-aos-delay={delay}
-//   >
-//     <h3 className="text-2xl font-semibold mb-4 text-white">{title}</h3>
-//     <ul className="list-disc list-inside text-slate-300 space-y-2">
-//       {items.map((item, idx) => (
-//         <li key={idx}>{item}</li>
-//       ))}
-//     </ul>
-//   </div>
-// );
-// Card (replace your current Card)
-const Card = ({ title, items, delay }) => (
+const Card = ({ title, items, icon, delay }) => (
   <div
-    className="w-full bg-gradient-to-r from-black to-purple-950 border border-purple-600
-      rounded-2xl p-4 sm:p-6 mb-6
-      transform hover:-translate-y-1 hover:from-purple-950 hover:to-black shadow-lg"
+    className="relative bg-gradient-to-br from-slate-900/60 to-slate-800/30 backdrop-blur-md 
+               border border-purple-500/30 rounded-2xl p-6 shadow-lg 
+               hover:scale-[1.03] hover:shadow-purple-500/20 transition-all duration-300 group"
     data-aos="fade-up"
     data-aos-delay={delay}
   >
-    <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-3 text-white text-center sm:text-left">
-      {title}
-    </h3>
+    <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-600/10 to-transparent opacity-0 group-hover:opacity-100 blur-2xl transition-all duration-300" />
 
-    <ul className="list-disc list-inside text-sm sm:text-base text-slate-300 space-y-2 leading-relaxed">
+    <div className="flex items-center gap-3 mb-4">
+      {icon}
+      <h3 className="text-xl font-semibold text-white">{title}</h3>
+    </div>
+
+    <ul className="list-disc list-inside text-slate-300 space-y-2">
       {items.map((item, idx) => (
-        <li key={idx} className="break-words">
+        <li key={idx} className="leading-relaxed">
           {item}
         </li>
       ))}
     </ul>
   </div>
 );
-
-const CPProfileCard = ({ profile, delay }) => (
-  <a
-    href={profile.url}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-gradient-to-r max-w-7xl mt-6 from-black to-purple-950 border border-purple-600 rounded-2xl p-4 flex flex-col items-center gap-2 transform hover:scale-[1.03] transition-transform duration-300 shadow-lg"
-    data-aos="fade-up"
-    data-aos-delay={delay}
-  >
-    <div className="w-[200px] h-[200px] rounded-full flex items-center justify-center">
-      <img src={profile.logo} alt={profile.name} className="w-[150px] h-[150px] object-cover rounded-xl" />
-    </div>
-    <span className="text-white font-medium">{profile.name}</span>
-  </a>
-);
-
 export default function AchievementsSection() {
   useEffect(() => {
     AOS.init({ duration: 800, once: true, offset: 60 });
   }, []);
 
   return (
-    <section id="achievements" className="relative min-h-screen py-20 px-6 bg-black text-white">
-      {/* Grid overlay */}
-      <div
-        className="absolute inset-0 pointer-events-none z-0
-        [background-image:linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)]
-        [background-size:40px_40px]"
-      />
+    <section
+      id="achievements"
+      className="relative min-h-screen py-20 px-6 bg-black text-white overflow-hidden"
+    >
+      {/* Animated Background Grid */}
+      {/* <div
+        className="absolute inset-0 pointer-events-none z-0 animate-pulse-slow
+          [background-image:linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),
+          linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)]
+          [background-size:60px_60px]"
+      /> */}
 
-      <div className="max-w-7xl mx-auto space-y-16">
-        
-        <h2 className="text-3xl font-bold text-center mb-12">Achievements & positions</h2>
+      {/* Floating Orbs */}
+      {/* <div className="absolute -top-32 -left-32 w-72 h-72 bg-purple-600/30 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl animate-pulse"></div> */}
 
-        {/* DSA Achievements */}
-        <Card title="DSA & Problem Solving" items={dsaAchievements} delay={100} />
+      <div className="relative max-w-7xl mx-auto z-10">
+        <h2
+          className="text-4xl font-bold mb-16 text-center bg-gradient-to-r 
+                     text-purple-400 via-pink-400 to-indigo-400 bg-clip-text"
+        >
+          Achievements & Positions
+        </h2>
 
-        {/* Positions / Roles */}
-        <Card title="Positions & Roles" items={positions} delay={200} />
-
-        {/* Academics */}
-        <Card title="Academics" items={academics} delay={300} />
+        {/* 3 Info Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+          <Card
+            title="DSA & Problem Solving"
+            // icon={<Trophy className="text-yellow-400" size={26} />}
+            items={dsaAchievements}
+            delay={100}
+          />
+          <Card
+            title="Positions & Roles"
+            // icon={<Briefcase className="text-pink-400" size={26} />}
+            items={positions}
+            delay={200}
+          />
+          {/* <Card
+            title="Academics"
+            // icon={<GraduationCap className="text-cyan-400" size={26} />}
+            items={academics}
+            delay={300}
+          /> */}
+        </div>
 
         {/* CP Profiles */}
-          <h3 className="text-2xl font-bold text-white text-center mb-6 mt-36">Competitive Programming Profiles</h3>
-          
-          <div className="w-full sm:flex flex-wrap justify-between items-center gap-6 ">
-            {cpProfiles.map((profile, idx) => (
-              <CPProfileCard key={profile.name} profile={profile} delay={400 + idx * 100} />
+        {/* <h3
+          className="text-3xl font-semibold text-center mt-24 mb-10 bg-gradient-to-r 
+                     from-purple-400 via-pink-400 to-indigo-400 bg-clip-text text-transparent"
+          data-aos="fade-up"
+        >
+          Competitive Programming Profiles
+        </h3>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center">
+          {cpProfiles.map((profile, idx) => (
+            <CPProfileCard
+              key={profile.name}
+              profile={profile}
+              delay={400 + idx * 100}
+            />
+          ))}
+        </div> */}
+        <section className=" bg-black py-20 text-white">
+          <h2 className="text-3xl font-bold text-center mb-12">CP Profiles</h2>
+        
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {[
+              {
+                name: "LeetCode",
+                logo: "https://leetcode.com/static/images/LeetCode_logo_rvs.png",
+                stats: "400+ Problems | Top 6.93% global",
+                color: "from-yellow-400 to-orange-500",
+                link: "https://leetcode.com/u/jhanvi857",
+              },
+              {
+                name: "Codeforces",
+                logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3LVEIg_6x2wqlPG8pruOUnUi-wEvnw1eC0w&s",
+                stats: "Rating: 1044",
+                color: "from-blue-600 to-cyan-400",
+                link: "https://codeforces.com/profile/jhanvi.857",
+              },
+              {
+                name: "HackerRank",
+                logo: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/160_Hackerrank_logo_logos-512.png",
+                stats: "Java 5 star | Problem solving silver badge",
+                color: "from-green-400 to-green-500",
+                link: "https://www.hackerrank.com/profile/jhanvip8507",
+              },
+            ].map((cp, i) => (
+              <a
+                key={i}
+                href={cp.link}
+                target="_blank"
+                className={`bg-gradient-to-br ${cp.color} p-[2px] rounded-xl hover:scale-105 transition-transform`}
+              >
+                <div className="bg-black rounded-xl p-6 flex flex-col items-center">
+                  <img src={cp.logo} alt={cp.name} className="w-12 h-12 mb-4" />
+                  <h3 className="text-xl font-semibold">{cp.name}</h3>
+                  <p className="text-gray-400 mt-2">{cp.stats}</p>
+                </div>
+              </a>
             ))}
           </div>
-        </div>
-            </section>
+        </section>
+      </div>
+    </section>
   );
 }

@@ -9,13 +9,15 @@ function Home() {
   useScrollToHash();
   return (
     <>
+      <section>
+        <div className="snow"></div>
       <section className="relative min-h-screen bg-black text-white flex items-center justify-center overflow-hidden px-6 pt-32 pb-16">
         {/* Grid BG */}
-        <div
+        {/* <div
           className="absolute inset-0 pointer-events-none z-0
           [background-image:linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)]
           [background-size:40px_40px]"
-        />
+        /> */}
 
         {/* Bubble BG */}
         <div
@@ -69,12 +71,10 @@ function Home() {
       <section id="projects" className="min-h-screen bg-black" data-aos="fade-up">
         <ProjectsSection />
       </section>
-
-      
-
       <section id="contact" className="min-h-screen bg-black" data-aos="fade-up">
         <ContactSection />
       </section>
+    </section>
     </>
   );
 }
