@@ -80,7 +80,7 @@ function App() {
         </div>
         {/* Mobile Menu Icon */}
         <div className="flex items-center justify-between w-full content-center px-4 py-4 sm:hidden">
-        <h1 className="text-2xl font-bold text-white">Jhanvi</h1>
+        <Link to="/" className="text-2xl font-bold text-white">Jhanvi</Link>
         <div className="md:hidden text-white text-3xl cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <FaTimes/> : <FaBars/>}
         </div>

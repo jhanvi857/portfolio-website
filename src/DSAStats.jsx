@@ -19,7 +19,7 @@ const Card = ({ title, items, icon, delay }) => (
     className="relative bg-gradient-to-br from-slate-900/60 to-slate-800/30 backdrop-blur-md 
                border border-purple-500/30 rounded-2xl p-6 shadow-lg 
                hover:scale-[1.03] hover:shadow-purple-500/20 transition-all duration-300 group"
-    data-aos="fade-up"
+    data-aos="zoom-in-up"
     data-aos-delay={delay}
   >
     <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-600/10 to-transparent opacity-0 group-hover:opacity-100 blur-2xl transition-all duration-300" />
@@ -140,7 +140,7 @@ export default function AchievementsSection() {
                 href={cp.link}
                 target="_blank"
                 className={`bg-gradient-to-br ${cp.color} p-[2px] rounded-xl hover:scale-105 transition-transform`}
-              >
+                data-aos="zoom-in-up">
                 <div className="bg-black rounded-xl p-6 flex flex-col items-center">
                   <img src={cp.logo} alt={cp.name} className="w-12 h-12 mb-4" />
                   <h3 className="text-xl font-semibold">{cp.name}</h3>

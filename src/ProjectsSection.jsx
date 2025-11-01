@@ -4,6 +4,8 @@ import DSAVisualizer from "./DSAVisualizer.png";
 import RouteOptimizer from "./RouteOpt.png";
 import ChatVerse from "./ChatVerse.png";
 import TextCruncher from "./TextCruncher.png";
+import VisualBrief from "./VisualBrief.png";
+import SafeMailAI from "./safeMailAI.png";
 const projects = [
   {
     image:DSAVisualizer,
@@ -20,6 +22,24 @@ const projects = [
     tags: ["React", "Node.js","Express.js","MongoDB","OpenRoute API", "Dijkstra Algorithm"],
     demoLink: "https://route-optimizer-one.vercel.app/",
     codeLink: "https://github.com/jhanvi857/route-optimizer"
+  },
+  {
+    image: SafeMailAI,
+    title: "SafeMail-AI",
+    description:
+      "An AI-powered email safety system that connects to Gmail, scans messages for phishing and fraud attempts, and alerts users instantly. Built with Node.js, Flask, and React Native (web). It classifies emails using a TF-IDF-based ML model and highlights suspicious patterns. Currently optimized for web; mobile version under development. Accuracy is moderate due to limited dataset training but demonstrates full-stack AI integration and real-world application.",
+    tags: ["Node.js", "Flask", "React Native", "Machine Learning", "NLP"],
+    demoLink: "",
+    codeLink: "https://github.com/jhanvi857/SafeMail-AI-Mobile"
+  },
+  {
+    image: VisualBrief,
+    title: "VisualBrief",
+    description:
+      "A smart document analysis tool that transforms text into concise summaries and visual diagrams such as flowcharts, ER diagrams, and concept maps. It extracts entities and relationships from text using SpaCy and NLTK, then renders interactive diagrams via Mermaid.js. While diagram accuracy varies with text complexity, it effectively showcases text-to-visual translation and NLP-based diagram generation.",
+    tags: ["React", "TailwindCSS", "Node.js", "Python", "SpaCy", "Mermaid.js"],
+    demoLink: "https://visual-brief.vercel.app/",
+    codeLink: "https://github.com/jhanvi857/VisualBrief"
   },
   {
     image:ChatVerse,
@@ -41,7 +61,7 @@ const projects = [
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="rounded-xl p-6 shadow-md hover:shadow-purple-500/20  hover:shadow-2xl border border-white/10 ease-in bg-gradient-to-br from-black to-purple-950 hover:from-purple-950 hover:to-black" data-aos="fade-up">
+    <div className="rounded-xl p-6 shadow-md hover:shadow-purple-500/20  hover:shadow-2xl border border-white/10 ease-in bg-gradient-to-br from-black to-purple-950 hover:from-purple-950 hover:to-black" data-aos="zoom-in-up">
     <h3 className="text-xl sm:text-2xl font-semibold text-white mb-4 mt-2">
         {project.title}
       </h3>
