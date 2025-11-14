@@ -70,7 +70,7 @@ function App() {
             </Link>
           </div>
           <a
-            href="/JhaniPatelResume.pdf"
+            href="/Jhanvi_patel_resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="ml-6 hidden cursor-pointer md:inline-block border border-white text-white hover:text-purple-500 px-4 py-2 rounded-md hover:-translate-y-1 transition duration-300 font-semibold shadow-md"
@@ -113,7 +113,7 @@ function App() {
             )
           )}
           <a
-            href="/JhaniPatelResume.pdf"
+            href="/Jhanvi_patel_resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-white text-black px-4 py-2 rounded-md font-semibold shadow-md"

@@ -116,14 +116,14 @@ export default function AchievementsSection() {
               {
                 name: "LeetCode",
                 logo: "https://leetcode.com/static/images/LeetCode_logo_rvs.png",
-                stats: "400+ Problems | Top 6.93% global",
+                stats: "400+ Problems | contest rating 1816 (top 6.93%)",
                 color: "from-yellow-400 to-orange-500",
                 link: "https://leetcode.com/u/jhanvi857",
               },
               {
                 name: "Codeforces",
                 logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3LVEIg_6x2wqlPG8pruOUnUi-wEvnw1eC0w&s",
-                stats: "Rating: 1044",
+                stats: "Pupil | max rating(1210)",
                 color: "from-blue-600 to-cyan-400",
                 link: "https://codeforces.com/profile/jhanvi.857",
               },
