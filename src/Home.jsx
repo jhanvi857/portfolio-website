@@ -27,7 +27,6 @@ function Home() {
         />
         <div className="absolute -top-0 -left-40 w-[300px] h-[300px] bg-purple-700 opacity-20 blur-3xl rounded-full z-0"></div>
         <div className="absolute -top-0 -left-40 w-[300px] h-[300px] bg-purple-700 opacity-20 blur-3xl rounded-full z-0"></div>
-        {/* Animated line behind (optional) */}
         <div className="absolute top-1/2 left-0 w-full h-[2px] bg-purple-500 opacity-10 animate-backgroundTealLine blur-md z-0" />
 
         <div className="relative z-10 text-center max-w-4xl">
