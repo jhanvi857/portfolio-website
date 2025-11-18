@@ -10,7 +10,7 @@ function Home() {
   return (
     <>
       <section>
-        <div className="snow"></div>
+        {/* <div className="snow"></div> */}
       <section className="relative min-h-screen bg-black text-white flex items-center justify-center overflow-hidden px-6 pt-32 pb-16">
         {/* Grid BG */}
         {/* <div
@@ -44,7 +44,7 @@ function Home() {
 
           <p className="text-lg md:text-xl text-gray-300 mt-6 leading-relaxed">
             I’m a passionate full-stack developer and aspiring software enginner
-            pursuing B.Tech in Computer Science (2024–2028) from Gujarat. I love
+            pursuing B.Tech in Computer Science (2024–2028) from Adani university, Gujarat. I love
             solving complex problems with clean code and modern technologies
             like React, Tailwind CSS, Node.js, and MongoDB. With a keen interest
             in Data Structures & Algorithms, I enjoy solving problems and
