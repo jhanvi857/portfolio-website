@@ -9,14 +9,6 @@ import SafeMailAI from "./safeMailAI.png";
 import CryptoTrace from "./cryptoTrace.png";
 const projects = [
   {
-    image:DSAVisualizer,
-    title: "DSA Visualizer",
-    description: "An interactive tool to visualize data structures like arrays, strings,Linked list, trees, graphs,maps & sets, algorithms like sorting, graph algorithms, tree algorithms and classical questions of DSA.It's built to help students, developers, and interview candidates understand how various DSA concepts work through step-by-step animations and interactive controls.",
-    tags: ["React", "TailwindCSS","Node.js","MongoDB", "Algorithms"],
-    demoLink: "https://dsa-visualizer-gilt.vercel.app/",
-    codeLink: "https://github.com/jhanvi857/dsa-visualizer"
-  },
-  {
     image:RouteOptimizer,
     title: "Route Optimizer",
     description: "A full-stack web application that calculates the most optimized route using Dijkstra’s Algorithm and visualizes it beautifully on an interactive map with Leaflet.js.Built with React.js, Tailwind CSS, Node.js, Express.js, and OpenRouteService, this project combines Data Structures & Algorithms with modern web development practices.",
@@ -25,13 +17,12 @@ const projects = [
     codeLink: "https://github.com/jhanvi857/route-optimizer"
   },
   {
-    image: SafeMailAI,
-    title: "SafeMail-AI",
-    description:
-      "An AI-powered email safety system that connects to Gmail, scans messages for phishing and fraud attempts, and alerts users instantly. Built with Node.js, Flask, and React Native (web). It classifies emails using a TF-IDF-based ML model and highlights suspicious patterns. Currently optimized for web; mobile version under development. Accuracy is moderate due to limited dataset training but demonstrates full-stack AI integration and real-world application.",
-    tags: ["Node.js", "Flask", "React Native", "Machine Learning", "NLP"],
-    demoLink: "",
-    codeLink: "https://github.com/jhanvi857/SafeMail-AI-Mobile"
+    image:DSAVisualizer,
+    title: "DSA Visualizer",
+    description: "An interactive tool to visualize data structures like arrays, strings,Linked list, trees, graphs,maps & sets, algorithms like sorting, graph algorithms, tree algorithms and classical questions of DSA.It's built to help students, developers, and interview candidates understand how various DSA concepts work through step-by-step animations and interactive controls.",
+    tags: ["React", "TailwindCSS","Node.js","MongoDB", "Algorithms"],
+    demoLink: "https://dsa-visualizer-gilt.vercel.app/",
+    codeLink: "https://github.com/jhanvi857/dsa-visualizer"
   },
   {
     image: VisualBrief,
@@ -42,6 +33,16 @@ const projects = [
     demoLink: "https://visual-brief.vercel.app/",
     codeLink: "https://github.com/jhanvi857/VisualBrief"
   },
+  {
+    image: SafeMailAI,
+    title: "SafeMail-AI",
+    description:
+      "An AI-powered email safety system that connects to Gmail, scans messages for phishing and fraud attempts, and alerts users instantly. Built with Node.js, Flask, and React Native (web). It classifies emails using a TF-IDF-based ML model and highlights suspicious patterns. Currently optimized for web; mobile version under development. Accuracy is moderate due to limited dataset training but demonstrates full-stack AI integration and real-world application.",
+    tags: ["Node.js", "Flask", "React Native", "Machine Learning", "NLP"],
+    demoLink: "",
+    codeLink: "https://github.com/jhanvi857/SafeMail-AI-Mobile"
+  },
+  
   {
     image:CryptoTrace,
     title: "CryptoTrace",

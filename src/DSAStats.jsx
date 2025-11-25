@@ -3,15 +3,17 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const dsaAchievements = [
-  "Solved 350+ DSA problems on LeetCode (top 6.93%)",
-  "1200+ Hackos on HackerRank | Java 5-Star | Problem Solving silver badge",
+  "Solved 400+ DSA problems on LeetCode (top 6.93%)",
+  // "1200+ Hackos on HackerRank | Java 5-Star | Problem Solving silver badge",
+  "Pupil on codeforces",
+  "Java 5 star | problem solving silver badge on HackerRank"
 ];
 
 // const academics = ["91% in 10th board", "92.66% in PCM 12th board"];
 
 const positions = [
-  "DSA & CP Team Member at Adani student Programming and development club",
-  "Trainer at Adani university robotics club",
+  "DSA & CP Team Member at Adani Student Programming and Development Club",
+  "Trainer at Adani University Robotics Club",
 ];
 
 const Card = ({ title, items, icon, delay }) => (

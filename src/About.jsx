@@ -21,7 +21,7 @@ export const useScrollToHash = () => {
 export default function About() {
   return (
     <>
-      <div className="snow"></div>
+      {/* <div className="snow"></div> */}
       <section
         className="bg-black text-white flex items-center justify-center overflow-hidden px-8 pt-10 pb-20 relative"
         data-aos="fade-up"
