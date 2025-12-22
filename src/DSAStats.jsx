@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 const dsaAchievements = [
   "Solved 500+ DSA problems on LeetCode (top 6.93%)",
   // "1200+ Hackos on HackerRank | Java 5-Star | Problem Solving silver badge",
-  "Pupil on codeforces",
+  "Pupil on codeforces (Max rating: 1377)",
   "Java 5 star | problem solving silver badge on HackerRank"
 ];
 
@@ -125,7 +125,7 @@ export default function AchievementsSection() {
               {
                 name: "Codeforces",
                 logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3LVEIg_6x2wqlPG8pruOUnUi-wEvnw1eC0w&s",
-                stats: "Pupil | max rating(1359)",
+                stats: "Pupil | max rating(1377)",
                 color: "from-blue-600 to-cyan-400",
                 link: "https://codeforces.com/profile/jhanvi.857",
               },
