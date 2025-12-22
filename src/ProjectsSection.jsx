@@ -33,15 +33,15 @@ const projects = [
     demoLink: "https://visual-brief.vercel.app/",
     codeLink: "https://github.com/jhanvi857/VisualBrief"
   },
-  {
-    image: SafeMailAI,
-    title: "SafeMail-AI",
-    description:
-      "An AI-powered email safety system that connects to Gmail, scans messages for phishing and fraud attempts, and alerts users instantly. Built with Node.js, Flask, and React Native (web). It classifies emails using a TF-IDF-based ML model and highlights suspicious patterns. Currently optimized for web; mobile version under development. Accuracy is moderate due to limited dataset training but demonstrates full-stack AI integration and real-world application.",
-    tags: ["Node.js", "Flask", "React Native", "Machine Learning", "NLP"],
-    demoLink: "",
-    codeLink: "https://github.com/jhanvi857/SafeMail-AI-Mobile"
-  },
+  // {
+  //   image: SafeMailAI,
+  //   title: "SafeMail-AI",
+  //   description:
+  //     "An AI-powered email safety system that connects to Gmail, scans messages for phishing and fraud attempts, and alerts users instantly. Built with Node.js, Flask, and React Native (web). It classifies emails using a TF-IDF-based ML model and highlights suspicious patterns. Currently optimized for web; mobile version under development. Accuracy is moderate due to limited dataset training but demonstrates full-stack AI integration and real-world application.",
+  //   tags: ["Node.js", "Flask", "React Native", "Machine Learning", "NLP"],
+  //   demoLink: "",
+  //   codeLink: "https://github.com/jhanvi857/SafeMail-AI-Mobile"
+  // },
   
   {
     image:CryptoTrace,
@@ -51,14 +51,14 @@ const projects = [
     demoLink: "",
     codeLink: "https://github.com/jhanvi857/chatVerse-bot"
   },
-  {
-    image:TextCruncher,
-    title:"TextCruncher",
-    description:"TextCruncher is a fast, privacy-friendly text summarization tool that runs entirely offline. It uses extractive techniques like TextRank and frequency analysis to summarize plain text or PDFs — no internet or AI APIs required.",
-    tags: ["React","TailwindCSS","Node.js","node-summarizer","pdf-parser"],
-    demoLink:"https://text-cruncher.vercel.app/",
-    codeLink:"https://github.com/jhanvi857/TextCruncher-"
-  }
+  // {
+  //   image:TextCruncher,
+  //   title:"TextCruncher",
+  //   description:"TextCruncher is a fast, privacy-friendly text summarization tool that runs entirely offline. It uses extractive techniques like TextRank and frequency analysis to summarize plain text or PDFs — no internet or AI APIs required.",
+  //   tags: ["React","TailwindCSS","Node.js","node-summarizer","pdf-parser"],
+  //   demoLink:"https://text-cruncher.vercel.app/",
+  //   codeLink:"https://github.com/jhanvi857/TextCruncher-"
+  // }
 ];
 
 const ProjectCard = ({ project }) => {
