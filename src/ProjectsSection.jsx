@@ -6,15 +6,8 @@ import ChatVerse from "./ChatVerse.png";
 import TextCruncher from "./TextCruncher.png";
 import VisualBrief from "./VisualBrief.png";
 import SafeMailAI from "./safeMailAI.png";
+import CryptoTrace from "./cryptoTrace.png";
 const projects = [
-  {
-    image:DSAVisualizer,
-    title: "DSA Visualizer",
-    description: "An interactive tool to visualize data structures like arrays, strings,Linked list, trees, graphs,maps & sets, algorithms like sorting, graph algorithms, tree algorithms and classical questions of DSA.It's built to help students, developers, and interview candidates understand how various DSA concepts work through step-by-step animations and interactive controls.",
-    tags: ["React", "TailwindCSS","Node.js","MongoDB", "Algorithms"],
-    demoLink: "https://dsa-visualizer-gilt.vercel.app/",
-    codeLink: "https://github.com/jhanvi857/dsa-visualizer"
-  },
   {
     image:RouteOptimizer,
     title: "Route Optimizer",
@@ -24,13 +17,12 @@ const projects = [
     codeLink: "https://github.com/jhanvi857/route-optimizer"
   },
   {
-    image: SafeMailAI,
-    title: "SafeMail-AI",
-    description:
-      "An AI-powered email safety system that connects to Gmail, scans messages for phishing and fraud attempts, and alerts users instantly. Built with Node.js, Flask, and React Native (web). It classifies emails using a TF-IDF-based ML model and highlights suspicious patterns. Currently optimized for web; mobile version under development. Accuracy is moderate due to limited dataset training but demonstrates full-stack AI integration and real-world application.",
-    tags: ["Node.js", "Flask", "React Native", "Machine Learning", "NLP"],
-    demoLink: "",
-    codeLink: "https://github.com/jhanvi857/SafeMail-AI-Mobile"
+    image:DSAVisualizer,
+    title: "DSA Visualizer",
+    description: "An interactive tool to visualize data structures like arrays, strings,Linked list, trees, graphs,maps & sets, algorithms like sorting, graph algorithms, tree algorithms and classical questions of DSA.It's built to help students, developers, and interview candidates understand how various DSA concepts work through step-by-step animations and interactive controls.",
+    tags: ["React", "TailwindCSS","Node.js","MongoDB", "Algorithms"],
+    demoLink: "https://dsa-visualizer-gilt.vercel.app/",
+    codeLink: "https://github.com/jhanvi857/dsa-visualizer"
   },
   {
     image: VisualBrief,
@@ -42,10 +34,20 @@ const projects = [
     codeLink: "https://github.com/jhanvi857/VisualBrief"
   },
   {
-    image:ChatVerse,
-    title: "ChatVerse-AI chatbot",
-    description: "Chatverse is an AI chatbot platform built to deliver accurate, context-aware responses. Whether you need assistance, casual conversation, or information, Chatverse is your go-to virtual assistant. The system leverages advanced AI models and offers an intuitive frontend for easy interaction.",
-    tags: ["HTML5", "TailwindCSS", "Node.js","MongoDB","Express.js"],
+    image: SafeMailAI,
+    title: "SafeMail-AI",
+    description:
+      "An AI-powered email safety system that connects to Gmail, scans messages for phishing and fraud attempts, and alerts users instantly. Built with Node.js, Flask, and React Native (web). It classifies emails using a TF-IDF-based ML model and highlights suspicious patterns. Currently optimized for web; mobile version under development. Accuracy is moderate due to limited dataset training but demonstrates full-stack AI integration and real-world application.",
+    tags: ["Node.js", "Flask", "React Native", "Machine Learning", "NLP"],
+    demoLink: "",
+    codeLink: "https://github.com/jhanvi857/SafeMail-AI-Mobile"
+  },
+  
+  {
+    image:CryptoTrace,
+    title: "CryptoTrace",
+    description: "A web platform that helps users analyze blockchain wallet activity, transaction patterns, and on-chain behavior. where, my part was to integrate external crypto APIs into React components, I built secure REST APIs for search/export/saved data, and designed an interactive analytics dashboard using react-graph for visual insights.",
+    tags: ["react.js", "TailwindCSS", "Node.js","PostgreSQL","Express.js"],
     demoLink: "",
     codeLink: "https://github.com/jhanvi857/chatVerse-bot"
   },
@@ -120,7 +122,7 @@ const ProjectCard = ({ project }) => {
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="relative min-h-screen py-20 px-6 bg-black text-white">
+    <section id="projects" className="relative min-h-screen py-20 px-6 text-white">
       {/* <div className="absolute inset-0 pointer-events-none z-0
           [background-image:linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)]
           [background-size:40px_40px]" /> */}

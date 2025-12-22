@@ -3,15 +3,17 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const dsaAchievements = [
-  "Solved 350+ DSA problems on LeetCode (top 6.93%)",
-  "1200+ Hackos on HackerRank | Java 5-Star | Problem Solving silver badge",
+  "Solved 450+ DSA problems on LeetCode (top 6.93%)",
+  // "1200+ Hackos on HackerRank | Java 5-Star | Problem Solving silver badge",
+  "Pupil on codeforces",
+  "Java 5 star | problem solving silver badge on HackerRank"
 ];
 
 // const academics = ["91% in 10th board", "92.66% in PCM 12th board"];
 
 const positions = [
-  "DSA & CP Team Member at Adani student Programming and development club",
-  "Trainer at Adani university robotics club",
+  "DSA & CP Team Member at Adani Student Programming and Development Club",
+  "Trainer at Adani University Robotics Club",
 ];
 
 const Card = ({ title, items, icon, delay }) => (
@@ -116,14 +118,14 @@ export default function AchievementsSection() {
               {
                 name: "LeetCode",
                 logo: "https://leetcode.com/static/images/LeetCode_logo_rvs.png",
-                stats: "400+ Problems | contest rating 1816 (top 6.93%)",
+                stats: "450+ Problems | contest rating 1816 (top 6.93%)",
                 color: "from-yellow-400 to-orange-500",
                 link: "https://leetcode.com/u/jhanvi857",
               },
               {
                 name: "Codeforces",
                 logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3LVEIg_6x2wqlPG8pruOUnUi-wEvnw1eC0w&s",
-                stats: "Pupil | max rating(1210)",
+                stats: "Pupil | max rating(1359)",
                 color: "from-blue-600 to-cyan-400",
                 link: "https://codeforces.com/profile/jhanvi.857",
               },
