@@ -49,7 +49,7 @@ const projects = [
     description: "A web platform that helps users analyze blockchain wallet activity, transaction patterns, and on-chain behavior. where, my part was to integrate external crypto APIs into React components, I built secure REST APIs for search/export/saved data, and designed an interactive analytics dashboard using react-graph for visual insights.",
     tags: ["react.js", "TailwindCSS", "Node.js","PostgreSQL","Express.js"],
     demoLink: "",
-    codeLink: "https://github.com/jhanvi857/chatVerse-bot"
+    codeLink: "https://github.com/jhanvi857/CryptoTrace"
   },
   // {
   //   image:TextCruncher,
