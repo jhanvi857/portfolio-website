@@ -6,7 +6,7 @@ import { Code, Layout, Server, Database, Wrench, Cpu } from "lucide-react";
 const skillCategories = [
   {
     category: "Languages",
-    icon: <Code className="text-purple-400" size={28} />,
+    icon: <Code className="text-cyan-400" size={28} />,
     skills: ["Python", "Java", "C", "JavaScript"],
   },
   {
@@ -39,13 +39,13 @@ const skillCategories = [
 const SkillCard = ({ category, icon, skills, delay }) => (
   <div
     className="relative bg-gradient-to-br from-slate-900/60 to-slate-800/30 backdrop-blur-md 
-               border border-purple-500/30 rounded-2xl p-6 shadow-lg 
-               hover:scale-[1.03] hover:shadow-purple-500/20 transition-all duration-300 group"
+               border border-cyan-500/30 rounded-2xl p-6 shadow-lg 
+               hover:scale-[1.03] hover:shadow-cyan-500/20 transition-all duration-300 group"
     data-aos="zoom-in-up"
     data-aos-delay={delay}
   >
     {/* Glow effect on hover */}
-    <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-600/10 to-transparent opacity-0 group-hover:opacity-100 blur-2xl transition-all duration-300" />
+    <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-cyan-600/10 to-transparent opacity-0 group-hover:opacity-100 blur-2xl transition-all duration-300" />
 
     <div className="flex items-center gap-3 mb-4">
       {icon}
@@ -57,7 +57,7 @@ const SkillCard = ({ category, icon, skills, delay }) => (
         <div
           key={skill}
           className="px-3 py-1.5 text-sm font-medium text-slate-200 bg-slate-800/40 
-                     border border-purple-500/20 rounded-lg hover:bg-purple-700/30 
+                     border border-cyan-500/20 rounded-lg hover:bg-cyan-700/30 
                      hover:text-white transition-all duration-200"
         >
           {skill}
@@ -86,12 +86,12 @@ export default function SkillsSection() {
       /> */}
 
       {/* Floating gradient orbs */}
-      {/* <div className="absolute -top-32 -left-32 w-72 h-72 bg-purple-600/30 rounded-full blur-3xl animate-pulse"></div>
+      {/* <div className="absolute -top-32 -left-32 w-72 h-72 bg-cyan-600/30 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl animate-pulse"></div> */}
 
       <div className="relative max-w-7xl mx-auto z-10">
         <h2
-          className="text-4xl font-bold mb-16 text-center bg-gradient-to-r text-purple-400 bg-clip-text "
+          className="text-4xl font-bold mb-16 text-center bg-gradient-to-r text-cyan-400 bg-clip-text "
         >
           My Skills
         </h2>
