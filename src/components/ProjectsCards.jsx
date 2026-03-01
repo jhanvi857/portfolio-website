@@ -13,6 +13,7 @@ const projects = [
         name: 'Route Optimizer',
         complexity: 'Full-Stack',
         desc: 'A full-stack web application that calculates the most optimized route using Dijkstra’s Algorithm and visualizes it beautifully on an interactive map with Leaflet.js. Built with React.js, Tailwind CSS, Node.js, Express.js, and OpenRouteService, this project combines Data Structures & Algorithms with modern web development practices.',
+        shortDesc: 'A web app utilizing Dijkstra\'s Algorithm to calculate and visualize optimized routes on an interactive map.',
         tags: ["React", "Node.js", "Express.js", "MongoDB", "OpenRoute API", "Dijkstra"],
         codeLink: 'https://github.com/jhanvi857/route-optimizer',
         demoLink: 'https://route-optimizer-one.vercel.app/',
@@ -23,6 +24,7 @@ const projects = [
         name: 'DSA Visualizer',
         complexity: 'Full-Stack',
         desc: "An interactive tool to visualize data structures like arrays, strings, Linked list, trees, graphs, maps & sets, algorithms like sorting, graph algorithms, tree algorithms and classical questions of DSA. It's built to help students, developers, and interview candidates understand how various DSA concepts work through step-by-step animations and interactive controls.",
+        shortDesc: 'Interactive animations for visualizing data structures, algorithms, and classic DSA problems side-by-side.',
         tags: ["React", "TailwindCSS", "Node.js", "MongoDB", "Algorithms"],
         codeLink: 'https://github.com/jhanvi857/dsa-visualizer',
         demoLink: 'https://dsa-visualizer-gilt.vercel.app/',
@@ -33,6 +35,7 @@ const projects = [
         name: 'VisualBrief',
         complexity: 'AI/NLP',
         desc: 'A smart document analysis tool that transforms text into concise summaries and visual diagrams such as flowcharts, ER diagrams, and concept maps. It extracts entities and relationships from text using SpaCy and NLTK, then renders interactive diagrams via Mermaid.js. While diagram accuracy varies with text complexity, it effectively showcases text-to-visual translation and NLP-based diagram generation.',
+        shortDesc: 'An AI-powered tool leveraging NLP to transform text into concise summaries and Mermaid.js flowcharts.',
         tags: ["React", "TailwindCSS", "Node.js", "Python", "SpaCy", "Mermaid.js"],
         codeLink: 'https://github.com/jhanvi857/VisualBrief',
         demoLink: 'https://visual-brief.vercel.app/',
@@ -43,6 +46,7 @@ const projects = [
         name: 'CryptoTrace',
         complexity: 'Full-Stack',
         desc: 'A web platform that helps users analyze blockchain wallet activity, transaction patterns, and on-chain behavior. where, my part was to integrate external crypto APIs into React components, I built secure REST APIs for search/export/saved data, and designed an interactive analytics dashboard using react-graph for visual insights.',
+        shortDesc: 'Blockchain analytics platform featuring REST APIs and dashboards to analyze transaction patterns.',
         tags: ["react.js", "TailwindCSS", "Node.js", "PostgreSQL", "Express.js"],
         codeLink: 'https://github.com/jhanvi857/CryptoTrace',
         demoLink: null,
@@ -51,7 +55,7 @@ const projects = [
 ];
 
 const ProjectsCards = () => (
-    <div className="flex flex-col gap-16 p-4 lg:p-12 overflow-y-auto h-full pr-4 pb-32 custom-scrollbar max-w-6xl mx-auto">
+    <div className="flex flex-col gap-8 lg:gap-16 p-4 lg:p-12 overflow-y-auto h-full pr-4 pb-32 custom-scrollbar max-w-6xl mx-auto">
         {projects.map((proj, i) => {
             const isEven = i % 2 === 0;
             return (
@@ -65,11 +69,11 @@ const ProjectsCards = () => (
                     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-500 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform origin-center duration-700 rounded-t-xl"></div>
 
                     {/* Image Section */}
-                    <div className="w-full lg:w-1/2 relative overflow-hidden rounded-xl border border-white/5 group-hover:border-cyan-500/30 transition-colors shadow-2xl">
+                    <div className="w-full lg:w-1/2 relative overflow-hidden rounded-xl border border-white/5 group-hover:border-cyan-500/30 transition-colors shadow-2xl shrink-0">
                         <div className="absolute inset-0 bg-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 pointer-events-none"></div>
-                        <img src={proj.image} alt={proj.name} className="w-full h-64 md:h-80 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out opacity-90 group-hover:opacity-100" />
+                        <img src={proj.image} alt={proj.name} className="w-full h-44 sm:h-56 md:h-80 object-cover object-top transform group-hover:scale-105 transition-transform duration-700 ease-out opacity-90 group-hover:opacity-100" />
                         <div className="absolute top-4 right-4 z-20">
-                            <span className="text-xs font-mono font-bold text-cyan-300 bg-black/60 backdrop-blur-md px-4 py-1.5 rounded border border-cyan-500/50 shadow-lg uppercase tracking-widest">
+                            <span className="text-[10px] md:text-xs font-mono font-bold text-cyan-300 bg-black/60 backdrop-blur-md px-3 md:px-4 py-1.5 rounded border border-cyan-500/50 shadow-lg uppercase tracking-widest">
                                 {proj.complexity}
                             </span>
                         </div>
@@ -77,13 +81,14 @@ const ProjectsCards = () => (
 
                     {/* Content Section */}
                     <div className="w-full lg:w-1/2 flex flex-col h-full flex-1">
-                        <h4 className="text-2xl md:text-4xl font-bold font-mono text-transparent bg-clip-text bg-gradient-to-r from-white to-cyan-400 tracking-wide mb-6 group-hover:text-cyan-300 transition-colors">
+                        <h4 className="text-xl sm:text-2xl md:text-4xl font-bold font-mono text-transparent bg-clip-text bg-gradient-to-r from-white to-cyan-400 tracking-wide mb-4 md:mb-6 group-hover:text-cyan-300 transition-colors mt-2 md:mt-0">
                             {proj.name}
                         </h4>
 
-                        <div className="bg-cyan-950/20 border border-cyan-900/50 p-5 rounded-xl mb-6 shadow-inner relative z-10 hover:border-cyan-500/40 transition-colors">
+                        <div className="bg-cyan-950/20 border border-cyan-900/50 p-4 md:p-5 rounded-xl mb-4 md:mb-6 shadow-inner relative z-10 hover:border-cyan-500/40 transition-colors">
                             <p className="text-sm md:text-base text-cyan-50 leading-relaxed font-mono text-justify">
-                                {proj.desc}
+                                <span className="block md:hidden">{proj.shortDesc}</span>
+                                <span className="hidden md:block">{proj.desc}</span>
                             </p>
                         </div>
 

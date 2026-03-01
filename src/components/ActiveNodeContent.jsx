@@ -48,7 +48,7 @@ const ActiveNodeContent = ({ activeNode, onClose }) => {
                     </div>
                     <button
                         onClick={onClose}
-                        className="text-xs md:text-sm font-mono border-2 border-red-500/60 text-red-400 hover:text-red-400 hover:scale- px-5 py-2 md:px-6 md:py-2.5 rounded-lg transition-all font-bold shadow-[0_0_10px_rgba(239,68,68,0.2)] cursor-pointer z-50 pointer-events-auto"
+                        className="text-[10px] sm:text-xs md:text-sm shrink-0 whitespace-nowrap font-mono border-2 border-red-500/60 text-red-400 hover:text-red-300 hover:scale-105 px-3 py-1.5 md:px-6 md:py-2.5 rounded-lg transition-all font-bold shadow-[0_0_10px_rgba(239,68,68,0.2)] cursor-pointer z-50 pointer-events-auto"
                     >
                         [ TERM_EXIT ]
                     </button>

@@ -91,7 +91,7 @@ const AlgorithmUniverse = () => {
                 </nav>
 
                 {/* Main Graph Interface */}
-                <div className={`absolute inset-0 transition-all duration-500 ${loading ? 'opacity-0 scale-95 pointer-events-none' : activeNode ? 'scale-[1.03] pointer-events-none opacity-40 blur-[2px]' : scrollNode ? 'scale-[0.98] mr-40 md:mr-80 opacity-90' : 'scale-100 opacity-100'}`}>
+                <div className={`absolute inset-0 transition-all duration-500 ${loading ? 'opacity-0 scale-95 pointer-events-none' : activeNode ? 'scale-[1.03] pointer-events-none opacity-40 blur-[2px]' : scrollNode ? 'scale-[0.98] pb-40 md:pb-0 md:mr-80 opacity-90' : 'scale-100 opacity-100'}`}>
                     <NetworkGraph
                         onNodeClick={(id) => openFullNode(id)}
                         onNodeHover={(id) => setHoveredNode(id)}
@@ -104,11 +104,11 @@ const AlgorithmUniverse = () => {
                     {scrollNode && !activeNode && !loading && (
                         <motion.div
                             key={scrollNode}
-                            initial={{ opacity: 0, x: 50, y: '-50%' }}
-                            animate={{ opacity: 1, x: 0, y: '-50%' }}
-                            exit={{ opacity: 0, x: 50, y: '-50%' }}
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            exit={{ opacity: 0, scale: 0.95 }}
                             transition={{ duration: 0.3 }}
-                            className="absolute right-6 lg:right-16 top-1/2 w-[85vw] max-w-sm bg-black/70 backdrop-blur-md border border-cyan-500/30 p-8 rounded-2xl shadow-[0_0_40px_rgba(0,255,255,0.15)] z-30 pointer-events-auto"
+                            className="absolute left-1/2 -translate-x-1/2 md:translate-x-0 md:left-auto md:right-6 lg:right-16 top-auto bottom-20 md:bottom-auto md:top-1/2 md:-translate-y-1/2 w-[90vw] md:w-auto md:max-w-sm bg-black/80 backdrop-blur-xl border border-cyan-500/40 p-6 md:p-8 rounded-2xl shadow-[0_0_40px_rgba(0,255,255,0.15)] z-30 pointer-events-auto"
                         >
                             <h3 className="text-2xl md:text-3xl font-bold text-cyan-400 font-mono mb-4 uppercase tracking-wider">{scrollContentMap[scrollNode].title}</h3>
                             <p className="text-base text-cyan-100/90 font-mono mb-8 leading-relaxed">
