@@ -19,12 +19,12 @@ const positions = [
 const Card = ({ title, items, icon, delay }) => (
   <div
     className="relative bg-gradient-to-br from-slate-900/60 to-slate-800/30 backdrop-blur-md 
-               border border-purple-500/30 rounded-2xl p-6 shadow-lg 
-               hover:scale-[1.03] hover:shadow-purple-500/20 transition-all duration-300 group"
+               border border-cyan-500/30 rounded-2xl p-6 shadow-lg 
+               hover:scale-[1.03] hover:shadow-cyan-500/20 transition-all duration-300 group"
     data-aos="zoom-in-up"
     data-aos-delay={delay}
   >
-    <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-600/10 to-transparent opacity-0 group-hover:opacity-100 blur-2xl transition-all duration-300" />
+    <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-cyan-600/10 to-transparent opacity-0 group-hover:opacity-100 blur-2xl transition-all duration-300" />
 
     <div className="flex items-center gap-3 mb-4">
       {icon}
@@ -59,13 +59,13 @@ export default function AchievementsSection() {
       /> */}
 
       {/* Floating Orbs */}
-      {/* <div className="absolute -top-32 -left-32 w-72 h-72 bg-purple-600/30 rounded-full blur-3xl animate-pulse"></div>
+      {/* <div className="absolute -top-32 -left-32 w-72 h-72 bg-cyan-600/30 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl animate-pulse"></div> */}
 
       <div className="relative max-w-7xl mx-auto z-10">
         <h2
           className="text-4xl font-bold mb-16 text-center bg-gradient-to-r 
-                     text-purple-400 via-pink-400 to-indigo-400 bg-clip-text"
+                     text-cyan-400 via-pink-400 to-indigo-400 bg-clip-text"
         >
           Achievements & Positions
         </h2>
@@ -95,7 +95,7 @@ export default function AchievementsSection() {
         {/* CP Profiles */}
         {/* <h3
           className="text-3xl font-semibold text-center mt-24 mb-10 bg-gradient-to-r 
-                     from-purple-400 via-pink-400 to-indigo-400 bg-clip-text text-transparent"
+                     from-cyan-400 via-pink-400 to-indigo-400 bg-clip-text text-transparent"
           data-aos="fade-up"
         >
           Competitive Programming Profiles
@@ -112,7 +112,7 @@ export default function AchievementsSection() {
         </div> */}
         <section className=" bg-black py-20 text-white">
           <h2 className="text-3xl font-bold text-center mb-12">CP Profiles</h2>
-        
+
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {[
               {
@@ -125,7 +125,7 @@ export default function AchievementsSection() {
               {
                 name: "Codeforces",
                 logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3LVEIg_6x2wqlPG8pruOUnUi-wEvnw1eC0w&s",
-                stats: "Specialist | max rating(1490)",
+                stats: "Specialist | max rating(1500)",
                 color: "from-blue-600 to-cyan-400",
                 link: "https://codeforces.com/profile/jhanvi.857",
               },
