@@ -55,7 +55,7 @@ const projects = [
 ];
 
 const ProjectsCards = () => (
-    <div className="flex flex-col gap-8 lg:gap-16 p-4 lg:p-12 overflow-y-auto h-full pr-4 pb-32 custom-scrollbar max-w-6xl mx-auto">
+    <div className="flex flex-col gap-8 lg:gap-16 p-4 lg:p-8 max-w-6xl mx-auto w-full">
         {projects.map((proj, i) => {
             const isEven = i % 2 === 0;
             return (
@@ -64,7 +64,7 @@ const ProjectsCards = () => (
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: i * 0.15, duration: 0.6 }}
-                    className={`group relative flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 lg:gap-12 items-center bg-black/40 backdrop-blur-md border border-cyan-500/20 p-6 lg:p-8 rounded-2xl hover:border-cyan-400/60 transition-all hover:shadow-[0_0_30px_rgba(0,255,255,0.15)]`}
+                    className={`group relative flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 lg:gap-12 items-center bg-black/40 backdrop-blur-md border border-cyan-500/20 p-6 lg:p-8 rounded-2xl hover:border-cyan-500/60 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_5px_20px_rgba(0,255,255,0.1)]`}
                 >
                     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-500 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform origin-center duration-700 rounded-t-xl"></div>
 
@@ -102,7 +102,7 @@ const ProjectsCards = () => (
 
                         <div className="flex gap-4 mt-auto">
                             {proj.demoLink && (
-                                <a href={proj.demoLink} target="_blank" rel="noreferrer" className="flex-1 text-center text-xs md:text-sm uppercase tracking-widest font-bold text-black bg-cyan-500/80 hover:bg-cyan-400 hover:scale-[1.02] transition-all border border-cyan-400 px-4 py-3 rounded flex items-center justify-center gap-2 shadow-[0_0_15px_rgba(0,255,255,0.3)]">
+                                <a href={proj.demoLink} target="_blank" rel="noreferrer" className="flex-1 text-center text-xs md:text-sm uppercase tracking-widest font-bold text-cyan-50 bg-cyan-900/60 hover:bg-cyan-800/80 hover:-translate-y-1 transition-all border border-cyan-500/50 hover:border-cyan-400 px-4 py-3 rounded flex items-center justify-center gap-2 shadow-[0_0_15px_rgba(0,255,255,0.15)] hover:shadow-[0_0_20px_rgba(0,255,255,0.2)]">
                                     <FaExternalLinkAlt /> Live Demo
                                 </a>
                             )}
