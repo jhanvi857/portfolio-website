@@ -25,7 +25,7 @@ const CoreIdentity = () => {
                     </div>
                     <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center">
                         <p className="text-sm font-mono text-cyan-400 tracking-wide group-hover:text-cyan-300 transition-colors">Adani University | Gujarat</p>
-                        <span className="text-sm font-mono text-cyan-200 tracking-widest font-bold mt-1 sm:mt-0">CGPA : 8.83</span>
+                        <span className="text-sm font-mono text-cyan-200 tracking-widest font-bold mt-1 sm:mt-0">CGPA : 8.89</span>
                     </div>
                 </div>
             </div>
