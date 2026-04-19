@@ -6,8 +6,26 @@ import ChatVerse from "./ChatVerse.png";
 import TextCruncher from "./TextCruncher.png";
 import VisualBrief from "./VisualBrief.png";
 import SafeMailAI from "./safeMailAI.png";
+import gitresolve from "./gitresolve.png";
+import NioFlow from "./NioFlow.png";
 import CryptoTrace from "./cryptoTrace.png";
 const projects = [
+  {
+    image:gitresolve,
+    title: "gitresolve",
+    description: "A locally executed, safety-first Git merge conflict resolver with syntax-aware classification, structured data merging, and full decision auditability.Standard Git merge operations perform line-based text integration. gitresolve classifies conflicts into deterministic categories, applies targeted resolution strategies per conflict type, and escalates to manual review when automated resolution would be unsafe. Every decision is logged, queryable, and CI-gateable",
+    tags: ["Golang", "concurrency","git","github","resolve"],
+    demoLink: "https://gitresolve.vercel.app/",
+    codeLink: "https://github.com/jhanvi857/gitresolve"
+  },
+  {
+    image:NioFlow,
+    title: "NioFlow",
+    description: "A lightweight Java 17 HTTP micro-framework with explicit routing, middleware composition, and production-focused runtime controls. NioFlow is designed around one principle: make HTTP internals understandable without sacrificing production behavior. Instead of hiding complexity behind annotations and reflection-heavy bootstrapping, NioFlow keeps transport, parsing, routing, middleware, and error handling explicit and testable.",
+    tags: ["Java", "HTTP", "Micro-framework", "Routing", "Middleware"],
+    demoLink: "https://core-http.vercel.app/",
+    codeLink: "https://github.com/jhanvi857/coreHTTP"
+  },
   {
     image:RouteOptimizer,
     title: "Route Optimizer",
@@ -16,14 +34,14 @@ const projects = [
     demoLink: "https://route-optimizer-one.vercel.app/",
     codeLink: "https://github.com/jhanvi857/route-optimizer"
   },
-  {
-    image:DSAVisualizer,
-    title: "DSA Visualizer",
-    description: "An interactive tool to visualize data structures like arrays, strings,Linked list, trees, graphs,maps & sets, algorithms like sorting, graph algorithms, tree algorithms and classical questions of DSA.It's built to help students, developers, and interview candidates understand how various DSA concepts work through step-by-step animations and interactive controls.",
-    tags: ["React", "TailwindCSS","Node.js","MongoDB", "Algorithms"],
-    demoLink: "https://dsa-visualizer-gilt.vercel.app/",
-    codeLink: "https://github.com/jhanvi857/dsa-visualizer"
-  },
+  // {
+  //   image:DSAVisualizer,
+  //   title: "DSA Visualizer",
+  //   description: "An interactive tool to visualize data structures like arrays, strings,Linked list, trees, graphs,maps & sets, algorithms like sorting, graph algorithms, tree algorithms and classical questions of DSA.It's built to help students, developers, and interview candidates understand how various DSA concepts work through step-by-step animations and interactive controls.",
+  //   tags: ["React", "TailwindCSS","Node.js","MongoDB", "Algorithms"],
+  //   demoLink: "https://dsa-visualizer-gilt.vercel.app/",
+  //   codeLink: "https://github.com/jhanvi857/dsa-visualizer"
+  // },
   {
     image: VisualBrief,
     title: "VisualBrief",
@@ -43,14 +61,14 @@ const projects = [
   //   codeLink: "https://github.com/jhanvi857/SafeMail-AI-Mobile"
   // },
   
-  {
-    image:CryptoTrace,
-    title: "CryptoTrace",
-    description: "A web platform that helps users analyze blockchain wallet activity, transaction patterns, and on-chain behavior. where, my part was to integrate external crypto APIs into React components, I built secure REST APIs for search/export/saved data, and designed an interactive analytics dashboard using react-graph for visual insights.",
-    tags: ["react.js", "TailwindCSS", "Node.js","PostgreSQL","Express.js"],
-    demoLink: "",
-    codeLink: "https://github.com/jhanvi857/CryptoTrace"
-  },
+  // {
+  //   image:CryptoTrace,
+  //   title: "CryptoTrace",
+  //   description: "A web platform that helps users analyze blockchain wallet activity, transaction patterns, and on-chain behavior. where, my part was to integrate external crypto APIs into React components, I built secure REST APIs for search/export/saved data, and designed an interactive analytics dashboard using react-graph for visual insights.",
+  //   tags: ["react.js", "TailwindCSS", "Node.js","PostgreSQL","Express.js"],
+  //   demoLink: "",
+  //   codeLink: "https://github.com/jhanvi857/CryptoTrace"
+  // },
   // {
   //   image:TextCruncher,
   //   title:"TextCruncher",
