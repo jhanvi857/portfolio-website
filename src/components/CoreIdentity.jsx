@@ -7,10 +7,8 @@ const CoreIdentity = () => {
             <h2 className="text-2xl md:text-4xl font-bold font-mono text-transparent bg-clip-text bg-gradient-to-r from-white to-cyan-400 tracking-wide mb-6 group-hover/section:text-cyan-300 transition-colors">Jhanvi Patel</h2>
 
             <div className="w-full max-w-4xl text-cyan-100/90 leading-loose text-base md:text-lg font-mono mt-4 border-l-4 border-r-4 border-cyan-500/50 px-6 md:px-10 py-8 text-justify bg-black/60 backdrop-blur-md rounded-2xl shadow-xl shadow-cyan-900/20 hover:shadow-[0_0_20px_rgba(0,255,255,0.15)] hover:border-cyan-500/80 hover:bg-black/80 transition-all duration-500 hover:-translate-y-1 group cursor-default">
-                <p className="mb-6">
+                <p className="mb-4">
                     I’m an aspiring software engineer pursuing B.Tech in Computer Science (2024–2028) from Adani University, Gujarat.
-                </p>
-                <p className="mb-6">
                     I love solving complex problems with clean code and modern technologies like <span className="text-cyan-400 font-bold group-hover:text-cyan-200 transition-colors">React, Tailwind CSS, Node.js, and MongoDB</span>.
                     With a keen interest in <span className="text-cyan-400 font-bold group-hover:text-cyan-200 transition-colors">Data Structures & Algorithms.</span>
                 </p>
