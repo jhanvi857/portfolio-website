@@ -7,12 +7,12 @@ const SkillsTree = () => {
             <h3 className="text-xl md:text-3xl font-bold text-center text-cyan-400 mb-8 font-mono border-b border-cyan-500/30 pb-4 inline-block tracking-widest uppercase">My Skills Dependency Tree</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl mx-auto pb-10">
                 {[
-                    { title: "Languages", nodes: ["Python", "Java", "C", "JavaScript"] },
-                    { title: "CS Fundamentals", nodes: ["DSA", "OOP", "OS", "CN"] },
+                    { title: "Languages", nodes: ["Python", "Java","Golang", "C", "JavaScript"] },
+                    { title: "CS Fundamentals", nodes: ["DSA", "OOP", "OS", "CN","System design"] },
                     { title: "Frontend", nodes: ["HTML", "CSS", "Tailwind CSS", "React.js", "React Native"] },
                     { title: "Backend", nodes: ["Node.js", "Express.js", "FastAPI"] },
                     { title: "Database", nodes: ["MongoDB", "PostgreSQL"] },
-                    { title: "Tools", nodes: ["Git & GitHub", "VS Code", "Postman"] }
+                    { title: "Tools", nodes: ["Git & GitHub", "VS Code", "Postman","Docker"] }
                 ].map((group, i) => (
                     <motion.div
                         key={i}

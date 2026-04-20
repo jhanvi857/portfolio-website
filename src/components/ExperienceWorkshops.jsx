@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const ExperienceWorkshops = () => {
     return (
         <div className="flex flex-col items-center justify-start p-4 lg:p-12 text-center max-w-5xl mx-auto w-full">
-            <h2 className="text-2xl md:text-4xl font-bold font-mono text-cyan-400 tracking-wide mb-8 uppercase tracking-widest border-b border-cyan-500/30 pb-4">Experience & Workshops</h2>
+            <h2 className="text-2xl md:text-4xl font-bold font-mono text-cyan-400 tracking-wide mb-8 uppercase border-b border-cyan-500/30 pb-4">Experience & Workshops</h2>
 
             <div className="w-full max-w-4xl mb-4">
                 <div className="relative border-l-2 border-cyan-500/30 ml-3 md:ml-6 pl-6 md:pl-8 py-2 space-y-8 text-left">

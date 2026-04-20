@@ -10,7 +10,7 @@ const DSAVisualizer = () => {
                 <div className="flex flex-col gap-4">
                     <h4 className="text-cyan-300 font-bold text-lg mb-2 tracking-wide border-l-2 border-cyan-500 pl-3">DSA & Problem Solving</h4>
                     {[
-                        "Solved 500+ DSA problems on LeetCode (top 6.93%)",
+                        "Solved 650+ DSA problems on LeetCode (top 6.93%)",
                         "Specialist on Codeforces (Max rating: 1500)",
                         "Java 5 star | Problem solving silver badge on HackerRank",
                     ].map((item, i) => (
@@ -48,7 +48,7 @@ const DSAVisualizer = () => {
             <h4 className="text-center font-bold text-cyan-400 text-xl uppercase tracking-widest mb-8 border-b-2 border-cyan-900 pb-3 w-fit mx-auto">CP Profiles</h4>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-auto pb-10">
                 {[
-                    { name: "LeetCode", stats: "500+ Problems", extra: "Top 6.93%", url: "https://leetcode.com/u/jhanvi857", img: "https://leetcode.com/static/images/LeetCode_logo_rvs.png" },
+                    { name: "LeetCode", stats: "650+ Problems", extra: "Top 6.93%", url: "https://leetcode.com/u/jhanvi857", img: "https://leetcode.com/static/images/LeetCode_logo_rvs.png" },
                     { name: "Codeforces", stats: "Specialist", extra: "Max Rating: 1500", url: "https://codeforces.com/profile/jhanvi.857", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3LVEIg_6x2wqlPG8pruOUnUi-wEvnw1eC0w&s" },
                     { name: "HackerRank", stats: "Java 5 Star", extra: "Silver Badge", url: "https://www.hackerrank.com/profile/jhanvip8507", img: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/160_Hackerrank_logo_logos-512.png" }
                 ].map((cp, j) => (

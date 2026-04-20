@@ -8,6 +8,7 @@ import VisualBriefImg from "../VisualBrief.png";
 import CryptoTraceImg from "../cryptoTrace.png";
 import GitresolveImg from "../gitresolve.png";
 import NioFlow from "../NioFlow.png";
+import evora from "../evora.png";
 const projects = [
     {
         id: 0,
@@ -30,6 +31,18 @@ const projects = [
         codeLink: 'https://github.com/jhanvi857/coreHTTP',
         demoLink: 'https://core-http.vercel.app/',
         image: NioFlow
+
+    },
+    {
+        id: 2,
+        name: 'Evora',
+        complexity: 'Event sourcing/OMS',
+        desc: 'a high-fidelity, event-sourced Order Management System (OMS) built on the NioFlow micro-framework. It demonstrates advanced distributed systems patterns including CQRS, Saga Orchestration, Event Sourcing, and Idempotent Command Handling within a unified, high-performance runtime.',
+        shortDesc: 'A high-fidelity, event-sourced Order Management System built on the NioFlow micro-framework.',
+        tags: ["Java", "Event Sourcing", "CQRS", "Saga Orchestration", "Idempotent Commands"],
+        codeLink: 'https://github.com/jhanvi857/evora',
+        demoLink: null,
+        image: evora
 
     },
     {
