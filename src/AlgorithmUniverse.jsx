@@ -61,7 +61,7 @@ const AlgorithmUniverse = () => {
 
                 <div className="flex items-center gap-4">
                     <a
-                        href="/Jhanvi_patel_resume.pdf"
+                        href="/Jhanvi_patel_SWE.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hidden md:inline-block border border-cyan-500/50 text-cyan-300 hover:bg-cyan-900/40 px-4 py-2 rounded-md transition-all font-mono text-md font-bold shadow-[0_0_10px_rgba(168,85,247,0.2)]"
