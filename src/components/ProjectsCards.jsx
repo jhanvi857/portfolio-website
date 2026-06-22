@@ -1,17 +1,27 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-
-import DSAVisualizerImg from "../DSAVisualizer.png";
+import docstream from "../docstream.png";
 import RouteOptimizerImg from "../RouteOpt.png";
 import VisualBriefImg from "../VisualBrief.png";
-import CryptoTraceImg from "../cryptoTrace.png";
 import GitresolveImg from "../gitresolve.png";
 import NioFlow from "../NioFlow.png";
+import arbiter from "../arbiter.png";
 import evora from "../evora.png";
 const projects = [
     {
         id: 0,
+        name: 'DocStream',
+        complexity: 'Systems/Git',
+        desc: 'DocStream is a highly scalable collaborative document editor backend (similar to Google Docs) built in Go, designed to synchronize concurrent edits in conflict-free real-time across multiple instances.',
+        shortDesc: 'A scalable collaborative document editor backend in Go, synchronizing concurrent edits in real-time.',
+        tags: ["Golang", "Concurrency", "Real-time", "Collaboration", "CRDT"],
+        codeLink: 'https://github.com/jhanvi857/docstream',
+        demoLink: 'https://doc-stream-two.vercel.app/',
+        image: docstream
+    },
+    {
+        id: 1,
         name: 'gitresolve',
         complexity: 'Systems/Git',
         desc: 'A locally executed, safety-first Git merge conflict resolver with syntax-aware classification, structured data merging, and full decision auditability. Standard Git merge operations perform line-based text integration. gitresolve classifies conflicts into deterministic categories, applies targeted resolution strategies per conflict type, and escalates to manual review when automated resolution would be unsafe. Every decision is logged, queryable, and CI-gateable.',
@@ -22,7 +32,7 @@ const projects = [
         image: GitresolveImg
     },
     {
-        id: 1,
+        id: 2,
         name: 'NioFlow',
         complexity: 'Systems/HTTP',
         desc: 'A lightweight Java 17 HTTP micro-framework with explicit routing, middleware composition, and production-focused runtime controls. NioFlow is designed around one principle: make HTTP internals understandable without sacrificing production behavior. Instead of hiding complexity behind annotations and reflection-heavy bootstrapping, NioFlow keeps transport, parsing, routing, middleware, and error handling explicit and testable.',
@@ -34,7 +44,18 @@ const projects = [
 
     },
     {
-        id: 2,
+        id: 3,
+        name : 'Arbiter',
+        complexity: 'Database query optimizer ML',
+        desc: 'Machine Learning-assisted Database Query Optimizer. The backend acts as a cost estimator model to predict query execution latency based on structural features and SQLite EXPLAIN QUERY PLAN details, suggesting schema or syntax rewrites (Plan A vs Plan B) to optimize query performance.',
+        shortDesc: 'A Machine Learning-assisted Database Query Optimizer that predicts query execution latency and suggests optimizations.',
+        tags: ["Python", "SQLite", "Machine Learning", "Query Optimization", "Database"],
+        codeLink: 'https://github.com/jhanvi857/Arbiter',
+        demoLink: 'https://arbiter-neon-seven.vercel.app/',
+        image: arbiter
+    },
+    {
+        id: 4,
         name: 'Evora',
         complexity: 'Event sourcing/OMS',
         desc: 'a high-fidelity, distributed Job Queue system built on the NioFlow micro-framework. It demonstrates advanced distributed systems patterns including CQRS, Saga Orchestration, Event Sourcing, and Idempotent Command Handling within a unified, high-performance runtime.',
@@ -46,7 +67,7 @@ const projects = [
 
     },
     {
-        id: 2,
+        id: 4,
         name: 'Route Optimizer',
         complexity: 'Full-Stack',
         desc: 'A full-stack web application that calculates the most optimized route using Dijkstra’s Algorithm and visualizes it beautifully on an interactive map with Leaflet.js. Built with React.js, Tailwind CSS, Node.js, Express.js, and OpenRouteService, this project combines Data Structures & Algorithms with modern web development practices.',
@@ -68,7 +89,7 @@ const projects = [
     //     image: DSAVisualizerImg
     // },
     {
-        id: 4,
+        id: 5,
         name: 'VisualBrief',
         complexity: 'AI/NLP',
         desc: 'A smart document analysis tool that transforms text into concise summaries and visual diagrams such as flowcharts, ER diagrams, and concept maps. It extracts entities and relationships from text using SpaCy and NLTK, then renders interactive diagrams via Mermaid.js. While diagram accuracy varies with text complexity, it effectively showcases text-to-visual translation and NLP-based diagram generation.',

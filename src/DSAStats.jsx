@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const dsaAchievements = [
-  "Solved 650+ DSA problems on LeetCode (top 6.93%)",
+  "Solved 700+ DSA problems on LeetCode (top 6.93%)",
   // "1200+ Hackos on HackerRank | Java 5-Star | Problem Solving silver badge",
   "Specialist on codeforces (Max rating: 1500)",
   "Java 5 star | problem solving silver badge on HackerRank"
