@@ -1,83 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* #49010F */
 @import "tailwindcss";
 
+@theme {
+  --color-burgundy: #721121;
+  --color-burgundy-light: #8E1F32;
+  --color-burgundy-dark: #500A15;
+  --color-burgundy-deep: #4E0012;
+  --color-cream: #FAF2E3;
+  --color-cream-soft: #F3E7D3;
+  --color-cream-dark: #EAE0CD;
+  --color-gold: #C5A880;
+  --color-gold-light: #D4BE9F;
+  --color-charcoal: #2B1A1D;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+}
+
 body {
-  background-color: #1C1E22;
-  color: #F2F2F2;
+  background-color: #721121;
+  color: #F9F6F0;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   letter-spacing: -0.01em;
-  /* Tighter tracking for UI elements */
 }
 
 h1,
 h2,
 h3,
 h4,
-h5 {
-  font-family: 'Satoshi', sans-serif;
-  letter-spacing: -0.02em;
+h5,
+h6 {
+  font-family: "Cormorant Garamond", serif;
 }
 
-.font-mono {
-  font-family: 'DM Sans', sans-serif;
-}
-
-.font-sans,
-.font-body {
-  font-family: 'DM Sans', sans-serif;
-}
-
-.font-heading {
-  font-family: 'Satoshi', sans-serif;
-}
-
-/* Custom Scrollbar */
+/* Custom Premium Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1C1E22;
+  background: #721121;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #A6B1C2;
+  background: #C5A880;
+  border: 2px solid #721121;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #D9C7A3;
+  background: #D4BE9F;
 }
 
-/* Glassmorphism utilities used implicitly by Tailwind classes but defined for extra control if needed */
-.glass {
-  background: rgba(36, 39, 45, 0.6);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(166, 177, 194, 0.1);
+/* Native Smooth Scroll configuration */
+html {
+  scroll-behavior: smooth;
+}
+
+.portfolio-section {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 6rem 1.5rem;
+}
+
+
+/* Hide scrollbars for horizontal scroll tracks */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+
+/* Custom premium elements */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F9F6F0 0%, #D4BE9F 50%, #C5A880 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.burgundy-gradient-text {
+  background: linear-gradient(135deg, #721121 0%, #8E1F32 50%, #500A15 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.editorial-title {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+}
+
+.italic-serif {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Premium micro-animations */
+.hover-gold-glow {
+  transition: all 0.3s ease;
+}
+.hover-gold-glow:hover {
+  box-shadow: 0 0 20px rgba(197, 168, 128, 0.3);
+  border-color: #C5A880;
+}
+
+.hover-burgundy-glow {
+  transition: all 0.3s ease;
+}
+.hover-burgundy-glow:hover {
+  box-shadow: 0 0 20px rgba(114, 17, 33, 0.2);
+  border-color: #721121;
 }
 
 .animate-marquee {
-  animation: marquee 15s linear infinite;
+  animation: marquee 20s linear infinite;
 }
 
 @keyframes marquee {
   0% {
     transform: translateX(0);
   }
-
   100% {
     transform: translateX(-50%);
   }
 }
 
-@media (max-width: 640px) {
-  .animate-marquee {
-    animation-duration: 20s;
-  }
+/* Thin premium scrollbar utility */
+.scrollbar-premium::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
 }
+.scrollbar-premium::-webkit-scrollbar-track {
+  background: rgba(114, 17, 33, 0.05);
+}
+.scrollbar-premium::-webkit-scrollbar-thumb {
+  background: #C5A880;
+  border-radius: 2px;
+}
+.scrollbar-premium::-webkit-scrollbar-thumb:hover {
+  background: #D4BE9F;
+}
+

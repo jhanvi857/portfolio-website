@@ -17,16 +17,17 @@ export default function CustomCursor() {
 
   return (
     <>
-      {/* Outer crosshair */}
+      {/* Outer gold ring */}
       <div
-        className="fixed top-0 left-0 w-8 h-8 border border-cyan-500/50 rounded-full pointer-events-none z-[9999] shadow-[0_0_10px_rgba(0,255,255,0.2)] flex items-center justify-center transition-transform duration-100 ease-out"
+        className="fixed top-0 left-0 w-8 h-8 border border-gold/60 rounded-full pointer-events-none z-[9999] shadow-[0_0_10px_rgba(197,168,128,0.2)] flex items-center justify-center transition-transform duration-100 ease-out"
         style={{
           transform: `translate(${position.x - 16}px, ${position.y - 16}px)`,
         }}
       >
-        {/* Inner dot */}
-        <div className="w-1.5 h-1.5 bg-cyan-400 rounded-sm shadow-[0_0_8px_rgba(168,85,247,0.8)]" />
+        {/* Inner gold dot */}
+        <div className="w-1.5 h-1.5 bg-gold rounded-full shadow-[0_0_8px_rgba(197,168,128,0.6)]" />
       </div>
     </>
   );
 }
+
