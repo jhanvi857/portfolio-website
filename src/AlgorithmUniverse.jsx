@@ -351,7 +351,7 @@ const AlgorithmUniverse = () => {
                         id="home"
                         className="portfolio-section bg-burgundy-deep px-6 h-screen overflow-hidden"
                     >
-                        {/* <ParallaxBackground src="/image_hero.png" opacity={0.12} /> */}
+                        <ParallaxBackground src="/image_hero.png" opacity={0.12} />
                         <div className="max-w-4xl text-center z-10 flex flex-col items-center">
                             <h1 className="hero-title text-6xl sm:text-7xl md:text-9xl font-extralight tracking-tight text-cream mb-4 editorial-title select-none">
                                 Jhanvi Patel
@@ -385,7 +385,7 @@ const AlgorithmUniverse = () => {
                         id="about"
                         className="portfolio-section bg-cream text-charcoal reveal-section"
                     >
-                    {/* <ParallaxBackground src="/cream_bg.png" opacity={0.12} /> */}
+                    <ParallaxBackground src="/cream_bg.png" opacity={0.12} />
                         <div className="w-full max-w-7xl mx-auto px-6 z-10">
                             <div className="flex flex-col items-center mb-6 text-center">
                                 <span className="text-gold font-light uppercase tracking-widest text-xs mb-2 reveal-element">01 / Profile</span>
@@ -405,7 +405,7 @@ const AlgorithmUniverse = () => {
                         id="skills"
                         className="portfolio-section bg-burgundy-deep text-cream reveal-section"
                     >
-                    {/* <ParallaxBackground src="/image_flower.png" opacity={0.10} /> */}
+                    <ParallaxBackground src="/image_flower.png" opacity={0.10} />
 
                         <div className="w-full max-w-7xl mx-auto px-6 z-10">
                             <div className="flex flex-col items-center mb-6 text-center">
@@ -426,7 +426,7 @@ const AlgorithmUniverse = () => {
                         id="achievements"
                         className="portfolio-section bg-cream text-charcoal reveal-section"
                     >
-                        {/* <ParallaxBackground src="/image_hero.png" opacity={0.12} /> */}
+                        <ParallaxBackground src="/image_hero.png" opacity={0.12} />
 
                         <div className="w-full max-w-7xl mx-auto px-6 z-10">
                             <div className="flex flex-col items-center mb-6 text-center">
@@ -447,7 +447,7 @@ const AlgorithmUniverse = () => {
                         id="projects"
                         className="portfolio-section bg-burgundy-deep text-cream reveal-section"
                     >
-                        {/* <ParallaxBackground src="/image_flower.png" opacity={0.10} /> */}
+                        <ParallaxBackground src="/image_flower.png" opacity={0.10} />
                         <div className="w-full max-w-7xl mx-auto px-6 z-10 flex flex-col justify-center h-full">
                             <div className="flex flex-col items-center mb-6 text-center">
                                 <span className="text-gold-light font-light uppercase tracking-widest text-xs mb-2 reveal-element">04 / Selected Work</span>
@@ -467,7 +467,7 @@ const AlgorithmUniverse = () => {
                         id="experience"
                         className="portfolio-section bg-cream text-charcoal reveal-section"
                     >
-                        {/* <ParallaxBackground src="/image.png" opacity={0.12} /> */}
+                        <ParallaxBackground src="/image.png" opacity={0.12} />
                         <div className="w-full max-w-7xl mx-auto px-6 z-10">
                             <div className="flex flex-col items-center mb-6 text-center">
                                 <span className="text-gold font-light uppercase tracking-widest text-xs mb-2 reveal-element">05 / Experience Log</span>
@@ -487,7 +487,7 @@ const AlgorithmUniverse = () => {
                         id="contact"
                         className="portfolio-section bg-burgundy-deep text-cream reveal-section"
                     >
-                        {/* <ParallaxBackground src="/burgundy_bg.png" opacity={0.12} /> */}
+                        <ParallaxBackground src="/burgundy_bg.png" opacity={0.12} />
                         <div className="w-full max-w-7xl mx-auto px-6 z-10">
                             <div className="flex flex-col items-center mb-6 text-center">
                                 <span className="text-gold-light font-light uppercase tracking-widest text-xs mb-2 reveal-element">06 / Connect</span>
