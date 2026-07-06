@@ -1,200 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-burgundy: #721121;
-  --color-burgundy-light: #8E1F32;
-  --color-burgundy-dark: #500A15;
-  --color-burgundy-deep: #4E0012;
-  --color-cream: #FAF2E3;
-  --color-cream-soft: #F3E7D3;
-  --color-cream-dark: #EAE0CD;
-  --color-gold: #C5A880;
-  --color-gold-light: #D4BE9F;
-  --color-charcoal: #2B1A1D;
-  --font-serif: "Cormorant Garamond", serif;
-  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --color-background: #030303;
+  --color-foreground: #fafafa;
+  --color-card: #09090b;
+  --color-card-foreground: #fafafa;
+  --color-popover: #09090b;
+  --color-popover-foreground: #fafafa;
+  --color-primary: #fafafa;
+  --color-primary-foreground: #18181b;
+  --color-secondary: #27272a;
+  --color-secondary-foreground: #fafafa;
+  --color-muted: #18181b;
+  --color-muted-foreground: #a1a1aa;
+  --color-accent: #27272a;
+  --color-accent-foreground: #fafafa;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #fafafa;
+  --color-border: #27272a;
+  --color-input: #27272a;
+  --color-ring: #d4d4d8;
+  --font-sans: "Geist", sans-serif;
+  --font-mono: "Geist Mono", monospace;
 }
 
-/* ============================================
-   BASE
-   ============================================ */
-
 body {
-  /* Was hardcoded to #721121 / #F9F6F0, which duplicate --color-burgundy
-     and a near-but-not-quite-match for --color-cream. Reference the
-     theme tokens so there's a single source of truth for color values. */
-  background-color: var(--color-burgundy-deep);
-  color: var(--color-cream);
+  background-color: var(--color-background);
+  background-image: 
+    radial-gradient(circle at 0% 0%, rgba(255, 255, 255, 0.12), transparent 450px),
+    radial-gradient(circle at 100% 100%, rgba(120, 119, 198, 0.08), transparent 500px);
+  background-attachment: fixed;
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: var(--font-sans);
-  letter-spacing: -0.01em;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* ============================================
-   SCROLLBAR
-   ============================================ */
-
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
-
 ::-webkit-scrollbar-track {
-  background: var(--color-burgundy-deep);
+  background: var(--color-background);
 }
-
 ::-webkit-scrollbar-thumb {
-  background: var(--color-gold);
-  border: 2px solid var(--color-burgundy-deep);
-  border-radius: 4px;
+  background: var(--color-border);
+  border-radius: 9999px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-gold-light);
+  background: var(--color-muted-foreground);
 }
 
-.scrollbar-premium::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
-}
-.scrollbar-premium::-webkit-scrollbar-track {
-  background: rgb(114 17 33 / 5%);
-}
-.scrollbar-premium::-webkit-scrollbar-thumb {
-  background: var(--color-gold);
-  border-radius: 2px;
-}
-.scrollbar-premium::-webkit-scrollbar-thumb:hover {
-  background: var(--color-gold-light);
-}
-
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-/* ============================================
-   LAYOUT — PORTFOLIO SECTIONS
-   ============================================ */
-
-.portfolio-section {
-  min-height: 100vh;
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  padding: 6rem 1.5rem;
-  /* Needed so each section properly clips its own ParallaxBackground
-     layer (which uses inset-0 + overflow-hidden internally already,
-     but this guards against any section missing that wrapper). */
-  isolation: isolate;
-}
-
-/* ============================================
-   PARALLAX BACKGROUND SUPPORT
-   ============================================ */
-
-/* The actual "image stays still, content moves" illusion in this codebase
-   is driven by GSAP scrubbing `yPercent` on .parallax-bg-layer while the
-   page scrolls normally — NOT by `background-attachment: fixed`, which
-   conflicts with transform-based animation. This class just establishes
-   sane defaults so every ParallaxBackground instance starts consistent
-   even before GSAP's gsap.set() runs on mount. */
-.parallax-bg-layer {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  will-change: transform;
-}
-
-/* ============================================
-   TYPOGRAPHY UTILITIES
-   ============================================ */
-
-.editorial-title {
-  font-family: var(--font-serif);
-  font-weight: 300;
-  letter-spacing: -0.02em;
-}
-
-.italic-serif {
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-weight: 400;
-}
-
-.gold-gradient-text {
-  background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-gold-light) 50%, var(--color-gold) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.burgundy-gradient-text {
-  background: linear-gradient(135deg, var(--color-burgundy) 0%, var(--color-burgundy-light) 50%, var(--color-burgundy-dark) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* ============================================
-   HOVER MICRO-INTERACTIONS
-   ============================================ */
-
-.hover-gold-glow {
-  transition: box-shadow 0.3s ease, border-color 0.3s ease;
-}
-.hover-gold-glow:hover {
-  box-shadow: 0 0 20px rgb(197 168 128 / 30%);
-  border-color: var(--color-gold);
-}
-
-.hover-burgundy-glow {
-  transition: box-shadow 0.3s ease, border-color 0.3s ease;
-}
-.hover-burgundy-glow:hover {
-  box-shadow: 0 0 20px rgb(114 17 33 / 20%);
-  border-color: var(--color-burgundy);
-}
-
-/* ============================================
-   ANIMATIONS
-   ============================================ */
-
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-.animate-marquee {
-  animation: marquee 20s linear infinite;
-}
-
-/* Respect users who've asked for less motion — applies site-wide,
-   including your GSAP-driven scroll reveals and parallax (handle the
-   JS side separately by checking this media query before initializing
-   ScrollTrigger scrub tweens, if you want full compliance). */
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-  .animate-marquee {
-    animation: none;
-  }
-}
+/* Dotted dividers */
+.divider-dotted {
+  border-top: 1px dotted rgba(161, 161, 170, 0.2);
+}
