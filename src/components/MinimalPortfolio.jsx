@@ -9,7 +9,8 @@ import nioflowImg from '../NioFlow.png';
 import arbiterImg from '../arbiter.png';
 import evoraImg from '../evora.png';
 import visualBriefImg from '../VisualBrief.png';
-
+import vexor from '../vexor.png';
+import meridian from '../meridian.png';
 import aspdcLogo from '../assets/aspdc-logo.png';
 import roboticsLogo from '../assets/robotics-logo.png';
 import adaniLogo from '../assets/adani-logo.png';
@@ -291,6 +292,14 @@ const MinimalPortfolio = () => {
       image: nioflowImg
     },
     {
+      title : 'Vexor',
+      date: 'API gateway/ Load Balancer',
+      description: 'compact Go API gateway built around route-local policy control. It loads configuration at startup, applies rate limiting and circuit breaking per route, load balances across healthy upstreams, and forwards traffic through a hardened reverse proxy with runtime metrics.',
+      tags: ['Golang', 'API Gateway', 'Load Balancer', 'Reverse Proxy'],
+      github: 'https://github.com/jhanvi857/vexor',
+      image: vexor
+    },
+    {
       title: 'Arbiter',
       date: 'Database / ML',
       description: 'Machine Learning-assisted Database Query Optimizer estimating sqlite plan latency to suggest rewrites and optimize query execution pathing.',
@@ -316,6 +325,14 @@ const MinimalPortfolio = () => {
       github: 'https://github.com/jhanvi857/VisualBrief',
       live: 'https://visual-brief.vercel.app/',
       image: visualBriefImg
+    },
+    {
+      title: 'Meridian',
+      date : 'ML/ RMI',
+      description: 'a standalone Python project that replaces a traditional B-Tree index with a 2-stage Recursive Model Index. It benchmarks lookup latency, build time, and memory footprint on three synthetic datasets of 1,000,000 keys.',
+      tags: ['Python', 'Machine Learning', 'Database'],
+      github: 'https://github.com/jhanvi857/Meridian',
+      image: meridian
     }
   ];
 
@@ -340,10 +357,10 @@ const MinimalPortfolio = () => {
 
   const workshops = [
     {
-      title: 'Lead Instructor: DSA Patterns Unlocked I',
+      title: 'Workshop Host: DSA 101',
       organization: 'ASPDC',
-      period: '2025',
-      description: 'Designed curriculum and taught Prefix Sum arrays, Hashmaps, and Sliding Window fundamentals to 2nd year engineering students.',
+      period: '2026',
+      description: 'Led an interactive session teaching Binary Search implementations and edge case handling to 1st year engineering students.',
       image: aspdcLogo,
       link: 'https://aspdc.vercel.app/'
     },
@@ -356,13 +373,21 @@ const MinimalPortfolio = () => {
       link: 'https://aspdc.vercel.app/'
     },
     {
-      title: 'Workshop Host: DSA 101',
+      title: 'Lead Instructor: DSA Patterns Unlocked I',
       organization: 'ASPDC',
-      period: '2024',
-      description: 'Led an interactive session teaching Binary Search implementations and edge case handling to 1st year engineering students.',
+      period: '2025',
+      description: 'Designed curriculum and taught Prefix Sum arrays, Hashmaps, and Sliding Window fundamentals to 2nd year engineering students.',
       image: aspdcLogo,
       link: 'https://aspdc.vercel.app/'
-    }
+    },
+    {
+      title: 'Trainer : Robotics workshop',
+      organization: 'AURC',
+      period: '2025',
+      description: 'Explained bit masking and taught bitwise operations for sensor and motor state control to second year engineering students.',
+      image: roboticsLogo,
+      link: 'https://aurc.in/'
+    },
   ];
 
   const cpProfiles = [
@@ -573,14 +598,14 @@ const MinimalPortfolio = () => {
                 <div className="flex flex-col justify-between flex-1 p-4 space-y-3">
                   <div className="space-y-2">
                     <div className="flex justify-between items-start gap-2">
-                      <h4 className="font-semibold text-sm sm:text-base text-foreground transition-colors">
+                      <h3 className="font-semibold text-sm sm:text-base text-foreground transition-colors">
                         {proj.title}
-                      </h4>
-                      <span className="text-[10px] text-muted-foreground font-mono bg-muted px-2 py-0.5 border border-border/20 rounded">
+                      </h3>
+                      <span className="text-[12px] text-muted-foreground font-mono bg-muted px-2 py-0.5 border border-border/20 rounded">
                         {proj.date}
                       </span>
                     </div>
-                    <p className="text-xs text-muted-foreground/80 leading-relaxed text-justify">
+                    <p className="text-xs sm:text-sm text-muted-foreground/80 leading-relaxed text-justify">
                       {proj.description}
                     </p>
                   </div>
