@@ -340,7 +340,7 @@ const MinimalPortfolio = () => {
     {
       title: 'DSA Domain Lead',
       organization: 'Adani Student Programming & Dev Club',
-      period: '2024 - Present',
+      period: '2025 - Present',
       description: 'Coordinated competitive programming contests, curated algorithmic problem sets, and guided students on optimization techniques.',
       image: aspdcLogo,
       link: 'https://aspdc.vercel.app/'
@@ -348,7 +348,7 @@ const MinimalPortfolio = () => {
     {
       title: 'Robotics Trainer',
       organization: 'Adani University Robotics Club',
-      period: '2024 - Present',
+      period: '2025 - Present',
       description: 'Conducted hands-on robotics workshops, taught microcontroller programming, and mentored student hardware-software projects.',
       image: roboticsLogo,
       link: 'https://aurc.in/'
