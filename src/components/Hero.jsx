@@ -11,7 +11,7 @@ export default function Hero({ variants }) {
       </div>
       <p className="text-base sm:text-lg text-muted-foreground leading-relaxed text-justify">
         Third-year Computer Science student at Adani University with a strong interest in backend engineering, distributed systems, and developer infrastructure. I’ve solved{' '}
-        <span className="text-foreground font-medium">750+ problems on LeetCode</span> and I am{' '}
+        <span className="text-foreground font-medium">800+ problems on LeetCode</span> and I am{' '}
         <span className="text-foreground font-medium">Specialist on Codeforces</span>.
       </p>
       <div className="pt-2 text-left">
