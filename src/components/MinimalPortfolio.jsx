@@ -64,13 +64,13 @@ const MinimalPortfolio = () => {
         <Projects variants={itemVariants} />
         
         <div className="divider-dotted" />
+        <Achievements variants={itemVariants} />
+        
+        <div className="divider-dotted" />
         <Leadership variants={itemVariants} />
         
         <div className="divider-dotted" />
         <Workshops variants={itemVariants} />
-        
-        <div className="divider-dotted" />
-        <Achievements variants={itemVariants} />
         
         <div className="divider-dotted" />
         <Contact variants={itemVariants} />

@@ -18,7 +18,7 @@ const achievements = [
     period: 'March 2026',
     description: 'Finished Top 5 out of 750+ teams. Co-built Phishlytics, a phishing simulation and timestamped behavior analytics MVP platform in 36 hours.',
     image: breachLogo,
-    link: 'https://lnkd.in/daZwj-JR'
+    link: 'https://anirvedapdeu.in/'
   }
 ];
 
