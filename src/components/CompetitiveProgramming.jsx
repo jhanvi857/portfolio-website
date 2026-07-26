@@ -44,12 +44,14 @@ export default function CompetitiveProgramming({ variants }) {
       <h2 className="font-semibold tracking-tight uppercase text-white text-md px-1 text-left">Competitive Programming</h2>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
         {cpProfiles.map((cp, idx) => (
-          <a 
+          <motion.a 
             key={idx}
             href={cp.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex flex-col justify-between p-4 bg-muted/20 hover:bg-zinc-900/40 border border-border/40 hover:border-zinc-800/60 rounded-xl transition-all duration-300 hover:-translate-y-0.5 shadow-sm hover:shadow-[0_4px_12px_rgba(255,255,255,0.01)] text-left"
+            whileHover={{ y: -4, scale: 1.02 }}
+            transition={{ duration: 0.2 }}
+            className="group flex flex-col justify-between p-4 bg-muted/20 hover:bg-zinc-900/60 border border-border/40 hover:border-zinc-700/80 rounded-xl transition-all duration-300 shadow-sm hover:shadow-[0_8px_20px_rgba(0,0,0,0.4)] text-left"
           >
             <div>
               <div className="flex items-center gap-2 mb-2">
@@ -58,7 +60,7 @@ export default function CompetitiveProgramming({ variants }) {
                   {cp.platform}
                 </h2>
               </div>
-              <p className="text-sm text-muted-foreground font-medium mt-1">
+              <p className="text-sm text-muted-foreground font-medium mt-1 group-hover:text-zinc-200 transition-colors">
                 {cp.stats}
               </p>
               <p className="text-[10px] text-muted-foreground/60 font-mono mt-0.5">
@@ -69,7 +71,7 @@ export default function CompetitiveProgramming({ variants }) {
             <div className="mt-4 inline-flex items-center justify-center gap-1.5 px-3 py-1.5 bg-zinc-900 border border-zinc-800 hover:border-zinc-500 rounded-md text-[11px] font-mono text-zinc-300 group-hover:text-white group-hover:bg-zinc-800 transition-all duration-300 w-full">
               <FaExternalLinkAlt className="text-[10px] text-center" /> View Profile
             </div>
-          </a>
+          </motion.a>
         ))}
       </div>
     </motion.section>

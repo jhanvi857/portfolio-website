@@ -81,17 +81,20 @@ export default function Projects({ variants }) {
       <h2 className="font-semibold tracking-tight uppercase text-white text-md px-1 text-left">My Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((proj, idx) => (
-          <div 
+          <motion.div 
             key={idx}
-            className="flex flex-col bg-zinc-950 border border-zinc-900 rounded-2xl overflow-hidden hover:border-zinc-800 transition-all duration-300 group shadow-md"
+            whileHover={{ y: -6 }}
+            transition={{ duration: 0.3, ease: 'easeOut' }}
+            className="flex flex-col bg-zinc-950/90 border border-zinc-900 rounded-2xl overflow-hidden hover:border-zinc-700/80 transition-all duration-300 group shadow-md hover:shadow-[0_12px_30px_rgba(0,0,0,0.5)]"
           >
             {/* Project Image Container */}
             <div className="relative aspect-video w-full overflow-hidden bg-zinc-900 border-b border-zinc-900/60">
               <img 
                 src={proj.image} 
                 alt={proj.title}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
 
             {/* Project Details */}
@@ -101,7 +104,7 @@ export default function Projects({ variants }) {
                   <h3 className="font-bold text-base sm:text-lg text-foreground group-hover:text-white transition-colors duration-200">
                     {proj.title}
                   </h3>
-                  <span className="text-[10px] text-muted-foreground font-mono bg-muted px-2 py-0.5 border border-border/20 rounded">
+                  <span className="text-[10px] text-muted-foreground font-mono bg-muted/80 px-2 py-0.5 border border-border/20 rounded">
                     {proj.date}
                   </span>
                 </div>
@@ -141,7 +144,7 @@ export default function Projects({ variants }) {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </motion.section>

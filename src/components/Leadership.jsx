@@ -28,15 +28,17 @@ export default function Leadership({ variants }) {
       <h2 className="font-semibold tracking-tight uppercase text-white text-md px-1 text-left">Leadership & Experience</h2>
       <div className="space-y-3">
         {leadership.map((exp, idx) => (
-          <a 
+          <motion.a 
             key={idx}
             href={exp.link} 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="group flex items-start gap-4 -mx-4 px-4 py-3.5 hover:bg-zinc-900/40 border border-transparent hover:border-zinc-800/50 rounded-xl transition-all duration-300 shadow-sm"
+            whileHover={{ x: 4 }}
+            transition={{ duration: 0.2 }}
+            className="group flex items-start gap-4 -mx-4 px-4 py-3.5 hover:bg-zinc-900/50 border border-transparent hover:border-zinc-800/80 rounded-xl transition-all duration-300 shadow-sm"
           >
             <div 
-              className="relative flex shrink-0 overflow-hidden rounded-full border border-zinc-200 size-12 bg-white flex-none items-center justify-center p-1.5 group-hover:scale-110 group-hover:border-zinc-400 group-hover:shadow-[0_0_12px_rgba(255,255,255,0.08)] transition-all duration-300"
+              className="relative flex shrink-0 overflow-hidden rounded-full border border-zinc-200 size-12 bg-white flex-none items-center justify-center p-1.5 group-hover:scale-110 group-hover:border-zinc-400 group-hover:shadow-[0_0_12px_rgba(255,255,255,0.12)] transition-all duration-300"
             >
               <img 
                 src={exp.image} 
@@ -64,7 +66,7 @@ export default function Leadership({ variants }) {
                 {exp.description}
               </p>
             </div>
-          </a>
+          </motion.a>
         ))}
       </div>
     </motion.section>

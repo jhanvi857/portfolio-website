@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { TypeAnimation } from 'react-type-animation';
 
 export default function Hero({ variants }) {
   return (
@@ -9,11 +10,34 @@ export default function Hero({ variants }) {
           Hi, I'm Jhanvi patel,
         </h1>
       </div>
+      
+      {/* Dynamic Typewriter Text Effect */}
+      <div className="text-sm font-mono text-zinc-400 flex items-center gap-2">
+        <span className="text-zinc-500 font-sans">&gt;</span>
+        <TypeAnimation
+          sequence={[
+            'Backend & Systems Engineer',
+            2000,
+            'Distributed Systems Enthusiast',
+            2000,
+            'Codeforces Specialist (1500 Max)',
+            2000,
+            '800+ LeetCode Solved',
+            2000
+          ]}
+          wrapper="span"
+          speed={50}
+          repeat={Infinity}
+          className="text-white font-medium underline decoration-zinc-600 underline-offset-4"
+        />
+      </div>
+
       <p className="text-base sm:text-lg text-muted-foreground leading-relaxed text-justify">
         Third-year Computer Science student at Adani University with a strong interest in backend engineering, distributed systems, and developer infrastructure. I’ve solved{' '}
         <span className="text-foreground font-medium">800+ problems on LeetCode</span> and I am{' '}
         <span className="text-foreground font-medium">Specialist on Codeforces</span>.
       </p>
+      
       <div className="pt-2 text-left">
         <a 
           href="Jhanvi_patel_SWE.pdf" 

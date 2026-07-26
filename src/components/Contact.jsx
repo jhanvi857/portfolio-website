@@ -14,40 +14,26 @@ export default function Contact({ variants }) {
       </div>
 
       <div className="flex justify-center gap-4 pt-4">
-        <a 
-          href="https://github.com/jhanvi857" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="p-3.5 bg-zinc-900 border border-zinc-800 text-white hover:bg-zinc-800 hover:border-zinc-500 rounded-full transition-all duration-300 hover:scale-110 hover:-translate-y-1 shadow-md hover:shadow-[0_0_15px_rgba(255,255,255,0.06)]"
-          title="GitHub"
-        >
-          <FaGithub className="text-xl" />
-        </a>
-        <a 
-          href="https://www.linkedin.com/in/jhanvi-patel-0a032b35a/" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="p-3.5 bg-zinc-900 border border-zinc-800 text-white hover:bg-zinc-800 hover:border-zinc-500 rounded-full transition-all duration-300 hover:scale-110 hover:-translate-y-1 shadow-md hover:shadow-[0_0_15px_rgba(255,255,255,0.06)]"
-          title="LinkedIn"
-        >
-          <FaLinkedin className="text-xl" />
-        </a>
-        <a 
-          href="https://x.com/jhanvi_857" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="p-3.5 bg-zinc-900 border border-zinc-800 text-white hover:bg-zinc-800 hover:border-zinc-500 rounded-full transition-all duration-300 hover:scale-110 hover:-translate-y-1 shadow-md hover:shadow-[0_0_15px_rgba(255,255,255,0.06)]"
-          title="Twitter / X"
-        >
-          <FaTwitter className="text-xl" />
-        </a>
-        <a 
-          href="mailto:jhanvip8507@gmail.com" 
-          className="p-3.5 bg-zinc-900 border border-zinc-800 text-white hover:bg-zinc-800 hover:border-zinc-500 rounded-full transition-all duration-300 hover:scale-110 hover:-translate-y-1 shadow-md hover:shadow-[0_0_15px_rgba(255,255,255,0.06)]"
-          title="Email"
-        >
-          <FaEnvelope className="text-xl" />
-        </a>
+        {[
+          { icon: <FaGithub className="text-xl" />, href: 'https://github.com/jhanvi857', title: 'GitHub' },
+          { icon: <FaLinkedin className="text-xl" />, href: 'https://www.linkedin.com/in/jhanvi-patel-0a032b35a/', title: 'LinkedIn' },
+          { icon: <FaTwitter className="text-xl" />, href: 'https://x.com/jhanvi_857', title: 'Twitter / X' },
+          { icon: <FaEnvelope className="text-xl" />, href: 'mailto:jhanvip8507@gmail.com', title: 'Email' }
+        ].map((item, idx) => (
+          <motion.a 
+            key={idx}
+            href={item.href} 
+            target={item.href.startsWith('mailto:') ? '_self' : '_blank'}
+            rel="noopener noreferrer" 
+            whileHover={{ scale: 1.15, y: -4 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: 'spring', stiffness: 300, damping: 15 }}
+            className="p-3.5 bg-zinc-900/90 border border-zinc-800 text-white hover:bg-white hover:text-black hover:border-white rounded-full transition-colors duration-300 shadow-md hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]"
+            title={item.title}
+          >
+            {item.icon}
+          </motion.a>
+        ))}
       </div>
     </motion.section>
   );
