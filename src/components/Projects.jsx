@@ -4,6 +4,15 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const projects = [
   {
+    title: 'CloudWeave',
+    date: 'object storage, golang',
+    description: 'A local, S3-compatible distributed object store for learning and prototyping distributed storage.',
+    tags: ['Golang', 'S3 compatibility', 'Object storage'],
+    github: 'https://github.com/jhanvi857/CloudWeave',
+    live: null,
+    image: '/cloudweave.png'
+  },
+  {
     title: 'DocStream',
     date: 'Systems / CRDT',
     description: 'A scalable collaborative document editor backend built in Go, designed to synchronize concurrent edits in conflict-free real-time across multiple instances.',
@@ -22,23 +31,6 @@ const projects = [
     image: '/gitresolve.png'
   },
   {
-    title: 'NioFlow',
-    date: 'Systems / HTTP',
-    description: 'A lightweight Java 17 HTTP micro-framework with explicit routing, middleware composition, and runtime controls designed to make HTTP internals explicit.',
-    tags: ['Java', 'HTTP', 'Routing', 'Middleware'],
-    github: 'https://github.com/jhanvi857/coreHTTP',
-    live: 'https://core-http.vercel.app/',
-    image: '/NioFlow.png'
-  },
-  {
-    title : 'Vexor',
-    date: 'API gateway/ Load Balancer',
-    description: 'Go API gateway that loads configuration at startup, applies rate limiting and circuit breaking per route, load balances across healthy upstreams, and forwards traffic through a hardened reverse proxy with runtime metrics.',
-    tags: ['Golang', 'API Gateway', 'Load Balancer', 'Reverse Proxy'],
-    github: 'https://github.com/jhanvi857/vexor',
-    image: '/vexor.png'
-  },
-  {
     title: 'Arbiter',
     date: 'Database / ML',
     description: 'Machine Learning-assisted Database Query Optimizer estimating sqlite plan latency to suggest rewrites and optimize query execution pathing.',
@@ -46,6 +38,23 @@ const projects = [
     github: 'https://github.com/jhanvi857/Arbiter',
     live: 'https://arbiter-neon-seven.vercel.app/',
     image: '/arbiter.png'
+  },
+  {
+    title: 'Vexor',
+    date: 'API gateway/ Load Balancer',
+    description: 'Go API gateway that loads configuration at startup, applies rate limiting and circuit breaking per route, load balances across healthy upstreams, and forwards traffic through a hardened reverse proxy with runtime metrics.',
+    tags: ['Golang', 'API Gateway', 'Load Balancer', 'Reverse Proxy'],
+    github: 'https://github.com/jhanvi857/vexor',
+    image: '/vexor.png'
+  },
+  {
+    title: 'NioFlow',
+    date: 'Systems / HTTP',
+    description: 'A lightweight Java 17 HTTP micro-framework with explicit routing, middleware composition, and runtime controls designed to make HTTP internals explicit.',
+    tags: ['Java', 'HTTP', 'Routing', 'Middleware'],
+    github: 'https://github.com/jhanvi857/coreHTTP',
+    live: 'https://core-http.vercel.app/',
+    image: '/NioFlow.png'
   },
   {
     title: 'Evora',
@@ -65,14 +74,14 @@ const projects = [
     live: 'https://visual-brief.vercel.app/',
     image: '/VisualBrief.png'
   },
-  {
-    title: 'Meridian',
-    date : 'ML/ RMI',
-    description: 'a standalone Python project that replaces a traditional B-Tree index with a 2-stage Recursive Model Index. It benchmarks lookup latency, build time, and memory footprint on three synthetic datasets of 1,000,000 keys.',
-    tags: ['Python', 'Machine Learning', 'Database'],
-    github: 'https://github.com/jhanvi857/Meridian',
-    image: '/meridian.png'
-  }
+  // {
+  //   title: 'Meridian',
+  //   date: 'ML/ RMI',
+  //   description: 'a standalone Python project that replaces a traditional B-Tree index with a 2-stage Recursive Model Index. It benchmarks lookup latency, build time, and memory footprint on three synthetic datasets of 1,000,000 keys.',
+  //   tags: ['Python', 'Machine Learning', 'Database'],
+  //   github: 'https://github.com/jhanvi857/Meridian',
+  //   image: '/meridian.png'
+  // }
 ];
 
 export default function Projects({ variants }) {
@@ -81,7 +90,7 @@ export default function Projects({ variants }) {
       <h2 className="font-semibold tracking-tight uppercase text-white text-md px-1 text-left">My Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((proj, idx) => (
-          <motion.div 
+          <motion.div
             key={idx}
             whileHover={{ y: -6 }}
             transition={{ duration: 0.3, ease: 'easeOut' }}
@@ -89,8 +98,8 @@ export default function Projects({ variants }) {
           >
             {/* Project Image Container */}
             <div className="relative aspect-video w-full overflow-hidden bg-zinc-900 border-b border-zinc-900/60">
-              <img 
-                src={proj.image} 
+              <img
+                src={proj.image}
                 alt={proj.title}
                 className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out"
               />
@@ -123,19 +132,19 @@ export default function Projects({ variants }) {
                 </div>
 
                 <div className="flex gap-4 text-xs font-mono pt-1">
-                  <a 
-                    href={proj.github} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href={proj.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-zinc-900/80 border border-zinc-800 hover:border-zinc-500 hover:bg-zinc-800 rounded-md text-[11px] font-mono text-zinc-300 hover:text-white transition-all duration-300 hover:scale-105"
                   >
                     <FaGithub className="text-[12px]" /> Github
                   </a>
                   {proj.live && (
-                    <a 
-                      href={proj.live} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
+                    <a
+                      href={proj.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-zinc-900/80 border border-zinc-800 hover:border-zinc-500 hover:bg-zinc-800 rounded-md text-[11px] font-mono text-zinc-300 hover:text-white transition-all duration-300 hover:scale-105"
                     >
                       <FaExternalLinkAlt className="text-[10px]" /> Live
