@@ -5,7 +5,7 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 const cpProfiles = [
   {
     platform: 'LeetCode',
-    stats: 'Solved 800+ problems',
+    stats: 'Solved 850+ problems',
     subtext: 'Max contest rating : 1816, Top 6.93% globally',
     link: 'https://leetcode.com/u/jhanvi857',
     logo: (
@@ -44,7 +44,7 @@ export default function CompetitiveProgramming({ variants }) {
       <h2 className="font-semibold tracking-tight uppercase text-white text-md px-1 text-left">Competitive Programming</h2>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
         {cpProfiles.map((cp, idx) => (
-          <motion.a 
+          <motion.a
             key={idx}
             href={cp.link}
             target="_blank"
@@ -67,7 +67,7 @@ export default function CompetitiveProgramming({ variants }) {
                 {cp.subtext}
               </p>
             </div>
-            
+
             <div className="mt-4 inline-flex items-center justify-center gap-1.5 px-3 py-1.5 bg-zinc-900 border border-zinc-800 hover:border-zinc-500 rounded-md text-[11px] font-mono text-zinc-300 group-hover:text-white group-hover:bg-zinc-800 transition-all duration-300 w-full">
               <FaExternalLinkAlt className="text-[10px] text-center" /> View Profile
             </div>

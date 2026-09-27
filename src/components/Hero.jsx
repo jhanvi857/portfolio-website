@@ -10,7 +10,7 @@ export default function Hero({ variants }) {
           Hi, I'm Jhanvi patel,
         </h1>
       </div>
-      
+
       {/* Dynamic Typewriter Text Effect */}
       <div className="text-sm font-mono text-zinc-400 flex items-center gap-2">
         <span className="text-zinc-500 font-sans">&gt;</span>
@@ -22,7 +22,7 @@ export default function Hero({ variants }) {
             2000,
             'Codeforces Specialist (1500 Max)',
             2000,
-            '800+ LeetCode Solved',
+            '850+ LeetCode Solved',
             2000
           ]}
           wrapper="span"
@@ -34,13 +34,13 @@ export default function Hero({ variants }) {
 
       <p className="text-base sm:text-lg text-muted-foreground leading-relaxed text-justify">
         Third-year Computer Science student at Adani University with a strong interest in backend engineering, distributed systems, and developer infrastructure. I’ve solved{' '}
-        <span className="text-foreground font-medium">800+ problems on LeetCode</span> and I am{' '}
+        <span className="text-foreground font-medium">850+ problems on LeetCode</span> and I am{' '}
         <span className="text-foreground font-medium">Specialist on Codeforces</span>.
       </p>
-      
+
       <div className="pt-2 text-left">
-        <a 
-          href="Jhanvi_patel_SWE.pdf" 
+        <a
+          href="Jhanvi_patel_SWE.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-4 py-2 bg-zinc-100 text-zinc-950 font-semibold text-xs sm:text-sm rounded-lg hover:bg-white hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_2px_8px_rgba(255,255,255,0.05)] w-fit"
