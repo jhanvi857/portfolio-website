@@ -5,7 +5,7 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 const cpProfiles = [
   {
     platform: 'LeetCode',
-    stats: 'Solved 850+ problems',
+    stats: 'Solved 900+ problems',
     subtext: 'Max contest rating : 1816, Top 6.93% globally',
     link: 'https://leetcode.com/u/jhanvi857',
     logo: (

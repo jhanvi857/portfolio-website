@@ -22,7 +22,7 @@ export default function Hero({ variants }) {
             2000,
             'Codeforces Specialist (1500 Max)',
             2000,
-            '850+ LeetCode Solved',
+            '900+ LeetCode Solved',
             2000
           ]}
           wrapper="span"
@@ -34,7 +34,7 @@ export default function Hero({ variants }) {
 
       <p className="text-base sm:text-lg text-muted-foreground leading-relaxed text-justify">
         Third-year Computer Science student at Adani University with a strong interest in backend engineering, distributed systems, and developer infrastructure. I’ve solved{' '}
-        <span className="text-foreground font-medium">850+ problems on LeetCode</span> and I am{' '}
+        <span className="text-foreground font-medium">900+ problems on LeetCode</span> and I am{' '}
         <span className="text-foreground font-medium">Specialist on Codeforces</span>.
       </p>
 
