@@ -15,6 +15,16 @@ const projects = [
     image: '/cloudweave.png'
   },
   {
+    title: 'Aegis',
+    date: 'Systems / ML',
+    description: 'self-healing distributed systems platform that observes a live microservice topology, predicts failures before they happen, identifies root cause, predicts how a failure will propagate, and automatically or semi-automatically executes recovery actions.',
+    tags: ['Golang', 'Distributed Systems', 'Machine Learning'],
+    categories: ['backend', 'distributed', 'ml'],
+    github: 'https://github.com/jhanvi857/Aegis',
+    live: 'https://aegis-nine-umber.vercel.app',
+    image: '/Aegis.png'
+  },
+  {
     title: 'NioFlow',
     date: 'Systems / HTTP',
     description: 'A lightweight Java 17 HTTP micro-framework with explicit routing, middleware composition, and runtime controls designed to make HTTP internals explicit.',
